@@ -4,39 +4,33 @@ import TabComponent from "./TabComponent";
 import ClassicGrid from "./ClassicGrid";
 
 interface ProjectsPageProps {
-    data: any;
+    projectData: any;
+    projectHeader: any;
+    projectStyles: any;
 }
 
-const ProjectsPage:  React.FC<ProjectsPageProps> = ({data}) => {
-    const projectsData = {
-      sectionName: "Projects",
-      description: "Behind these skills are [various project] where I had [central or sole contributions]:",
-      projectsComment: ""
-    }
+const ProjectsPage:  React.FC<ProjectsPageProps> = ({projectData, projectHeader, projectStyles}) => {
+
   
-    const projectStyles = {
-      "center": false
-    }
-  
-    const [activeTab, setActiveTab] = React.useState("Featured");
-    const tabs = ["Featured", "Classical ML", "Datascience", "Computer Vision", "NLP", "Web", "Crossplatform", "Others"]
+    const [activeTab, setActiveTab] = React.useState(projectHeader.activeTab);
+    const tabs = projectHeader.tabs;
   
     return (
-      <section className="skills" id={projectsData.sectionName}>
+      <section className="skills" id={projectHeader.sectionName}>
         <article className="c-article">
         <header className="c-article__header">
           <h1 style={{fontSize: '2.9rem', textAlign: (projectStyles.center) ? "center" : "left"}} className="c-article__title">
-           {projectsData.sectionName}
+           {projectHeader.sectionName}
           </h1>
         </header>
       </article>
-        <p style={{textAlign: (projectStyles.center) ? "center" : "justify", marginBottom: '2rem'}} className="description" dangerouslySetInnerHTML={{__html: formatText(projectsData.description)}}/>
-        <TabComponent activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs}/>
+        <p style={{textAlign: (projectStyles.center) ? "center" : "justify", marginBottom: '2rem'}} className="description" dangerouslySetInnerHTML={{__html: formatText(projectHeader.description)}}/>
+        {!projectStyles.showBottom && <TabComponent activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} tabUI={projectStyles.tabUI}/>}
         <div style={{border: `1px ${getComputedStyle(document.documentElement).getPropertyValue('--tertiary-color-affected')} solid`, borderRadius:'2rem'}}>
-          <ClassicGrid key={activeTab} data={data} category={activeTab}/>
+          <ClassicGrid key={activeTab} data={projectData} category={activeTab} icon={projectData.projectExtraLinkIcon}/>
         </div>
-        <TabComponent activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} bottom={true}/>
-        {projectsData.projectsComment !=="" && <p style={{textAlign: (projectStyles.center) ? "center" : "justify", marginBottom: '2rem', fontStyle:'normal'}} className="description" dangerouslySetInnerHTML={{__html: formatText(projectsData.projectsComment)}}/>}
+        {projectStyles.showBottom && <TabComponent activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} bottom={true} tabUI={projectStyles.tabUI}/>}
+        {projectHeader.projectsComment !=="" && <p style={{textAlign: (projectStyles.center) ? "center" : "justify", marginBottom: '2rem', fontStyle:'normal'}} className="description" dangerouslySetInnerHTML={{__html: formatText(projectHeader.projectsComment)}}/>}
       </section>
     )
   

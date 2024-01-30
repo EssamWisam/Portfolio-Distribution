@@ -8,18 +8,20 @@ import SkillsPage from './Pages/SkillsPage/SkillsPage';
 import ProjectsPage from './Pages/ProjectsPage/ProjectPage';
 
 //import data
-import { timelineData } from './PagesData/TimelinePage';
+import { navbarData, navbarStyles } from './PagesData/NavigationBar';
+import { heroData, heroStyles } from './PagesData/HeroPage';
+import { timelineHeader, timelineStyles, timelineData } from './PagesData/TimelinePage';
 import { softSkillsData, techSkillsData } from './PagesData/SkillsPage';
-import { projectData } from './PagesData/ProjectsPage';
+import { projectData, projectHeader, projectStyles } from './PagesData/ProjectsPage';
 
 const App: React.FC = () => {
   return (
     <div>
-      <NavigationBar />
-      <HeroPage />
-      <TimelinePage timelineData={timelineData} />
+      <NavigationBar navbarData={navbarData} navbarStyles={navbarStyles} />
+      <HeroPage heroData={heroData} heroStyles={heroStyles}/>
+      <TimelinePage timelineData={timelineData} timelineHeader={timelineHeader} timelineStyles={timelineStyles} />
       <SkillsPage softSkillsData={softSkillsData} techSkillsData={techSkillsData}/>
-      <ProjectsPage data={projectData}  />
+      <ProjectsPage projectHeader={projectHeader} projectStyles={projectStyles} projectData={projectData}  />
     </div>
   );
 };

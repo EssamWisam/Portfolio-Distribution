@@ -13,8 +13,10 @@ interface TabComponentProps {
     bottom?:boolean;
   }
 
-const TabComponent: React.FC<TabComponentProps> = ({ activeTab, setActiveTab, tabs, tabUI=true, smallGap=true, leftAlign=false, manyTabs=true, colorSelected=true, bottom=false }) => {
+const TabComponent: React.FC<TabComponentProps> = ({ activeTab, setActiveTab, tabs, tabUI=true, leftAlign=false, colorSelected=true, bottom=false }) => {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+    
 
     useEffect(() => {
       const handleResize = () => {
@@ -29,6 +31,11 @@ const TabComponent: React.FC<TabComponentProps> = ({ activeTab, setActiveTab, ta
         window.removeEventListener('resize', handleResize);
       };
     }, []);
+
+    if (tabs.length === 0) return null;
+    const manyTabs = (tabs.length > 4);
+    const smallGap = (tabs.length > 5);
+    
 
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);

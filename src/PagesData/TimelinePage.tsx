@@ -1,3 +1,13 @@
+
+export const timelineHeader = {
+  sectionName: "Roles",
+  description: "Throughout my career, I've immersed myself in [diverse roles] that have shaped my [professional journey]."
+}
+
+export const timelineStyles = {
+  "center": false
+}
+
 export const timelineData = [
   {
     id: 0,

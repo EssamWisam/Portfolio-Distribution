@@ -2,7 +2,12 @@ import * as MaterialIcons from "react-icons/md";
 import React, { useState } from 'react';
 import './NavigationBar.scss'; 
 
-const NavigationBar: React.FC = () => {
+interface NavigationBarProps {
+  navbarData:any;
+  navbarStyles:any;
+}
+
+const NavigationBar: React.FC<NavigationBarProps> = ({navbarData, navbarStyles}) => {
     const [menuOpen, setMenuOpen] = useState(false);
   
     const toggleMenu = () => {
@@ -31,15 +36,7 @@ const NavigationBar: React.FC = () => {
       }
     };
   
-    const navbarData = {
-      "logo": "ESSAM WISAM",
-      "pages": ["Home", "Roles", "Skills", "Projects", "Blogs", "YouTube", "Education", "Certificates"],
-      "icons": ["MdHome", "MdWork", "MdBuild", "MdExtension", "MdAssignment", "MdPlayCircle", "MdSchool", "MdReceipt"],
-    };
-    const navbarStyles = {
-      "showIcons": false,
-      "rounded": false
-    }
+
   
     return (
       <nav className="navigation" 
@@ -51,7 +48,7 @@ const NavigationBar: React.FC = () => {
           <h1>{navbarData.logo}</h1>
         </div>
         <ul className={`menu-list ${menuOpen ? 'open' : ''}`}>
-          {navbarData.pages.map((page, index) => (
+          {navbarData.pages.map((page:any, index:number) => (
             <li key={index}>
                 <a href="./" onClick={closeMenu}>
                 {/* @ts-ignore */}

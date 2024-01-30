@@ -1,3 +1,18 @@
+export const projectHeader = {
+  sectionName: "Projects",
+  tabs: ["Featured", "Classical ML", "Datascience", "Computer Vision", "NLP", "Web", "Crossplatform", "Others"],
+  activeTab: 'Featured',
+  description: "Behind these skills are [various project] where I had [central or sole contributions]:",
+  projectExtraLinkIcon: "FaGithub",
+  projectsComment: ""
+}
+
+export const projectStyles = {
+  "center": false,
+  "tabUI": true,
+  "showBottom": false
+}
+
 export const projectData = [
     {
       title: "Stand-With-Palestine.org",
