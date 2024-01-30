@@ -1,9 +1,9 @@
 import React from "react";
+import SectionHeader from "../../Common/SectionHeader";
 import LinearSkills from "./LinearSkills";
 import CircularSkills from "./CircularSkills";
 import BubbleSkills from "./BubbleSkills";
 import { formatText } from "../utils";
-import "./skills.scss";
 
 interface SkillsPageProps {
     softSkillsData: any[];
@@ -24,27 +24,7 @@ const SkillsPage: React.FC<SkillsPageProps> = ({softSkillsData, techSkillsData})
   };
   return (
     <section className="skills" id={skillsData.sectionName}>
-      <article className="c-article">
-        <header className="c-article__header">
-          <h1
-            style={{
-              fontSize: "2.9rem",
-              textAlign: skillStyles.center ? "center" : "left",
-            }}
-            className="c-article__title"
-          >
-            {skillsData.sectionName}
-          </h1>
-        </header>
-      </article>
-      <p
-        style={{
-          textAlign: skillStyles.center ? "center" : "justify",
-          marginBottom: "2rem",
-        }}
-        className="description"
-        dangerouslySetInnerHTML={{ __html: formatText(skillsData.description) }}
-      />
+      <SectionHeader sectionName={skillsData.sectionName} description={skillsData.description} isCentered={skillStyles.center} />
       <div style={{ whiteSpace: "nowrap" }}>
         {/* <LineSkillsComponent skillData={techData}/> */}
         {/* <LineSkillsComponent skillData={softSkillData} color="secondary"/> */}

@@ -19,6 +19,12 @@ html, body {
   background: -webkit-linear-gradient(-45deg, color-mix(in srgb, $background-color 90.5%, $theme), color-mix(in srgb, $background-color 70.5%, $theme));
 }
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
 
 
 // animated text
