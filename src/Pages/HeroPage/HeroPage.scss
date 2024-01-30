@@ -1,0 +1,130 @@
+@import '../../variables';
+
+// Hero.scss
+#hero {
+    background-color: transparent;
+    padding: 50px 0; // Adjust the padding as needed
+  }
+  
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px; // Set your desired max width
+    margin: 0 auto;
+  }
+  
+  .text-container {
+    padding: 2rem;
+    color: $text-color;
+    flex-basis: 60%;
+    h1, h2, p {
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-weight: 900;
+      background: -webkit-linear-gradient(0deg, color-mix(in srgb, $background-color 20.5%, $secondary-color) , $tertiary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      color: color-mix(in srgb, $background-color 40.5%, $inverse-theme);
+      background: -webkit-linear-gradient(45deg, color-mix(in srgb, $background-color 20.5%, $inverse-theme), color-mix(in srgb, $background-color 60.5%, $inverse-theme));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    p {
+      text-align: justify;
+
+    }
+
+    .icons-container {
+      display: flex;
+      gap: 0.7rem;
+      svg {
+      &:hover {
+        color: color-mix( in srgb, $text-color 0%, $inverse-theme);
+      }
+    }
+    p {
+      color: color-mix(in srgb, $background-color 40.5%, $inverse-theme);
+      background: -webkit-linear-gradient(45deg, color-mix(in srgb, $background-color 20.5%, $secondary-color) , $tertiary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    }
+  }
+
+  
+  .circle-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-picture {
+    background-size: cover;
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  button {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: $text-color;
+    border: 1px white solid;
+    padding: 10px 20px; // Adjust padding as needed
+    margin-right: 10px; // Adjust margin between buttons
+    cursor: pointer;
+    background: color-mix(in srgb, $background-color 93.5%, white);
+    
+    
+    &:hover {
+      transform: scale(1.03);
+      color: color-mix( in srgb, $text-color 0%, white);
+      background: linear-gradient(-45deg,
+      color-mix(in srgb, $background-color 40.5%, $secondary-color), 
+      color-mix(in srgb, $background-color 40.5%, $tertiary-color),
+      color-mix(in srgb, $background-color 40.5%, $secondary-color), 
+      color-mix(in srgb, $background-color 40.5%, $tertiary-color));
+       transition: transform 1s ease;
+      background-size: 400% 400%;
+      animation: gradient 4s ease infinite;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  }
+}
+  
+.colorful-text {
+  background: -webkit-linear-gradient(45deg, color-mix(in srgb, $background-color 10.5%, $secondary-color) , $tertiary-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,300;1,400&display=swap');
+
+.quote {
+  font-family: 'Crimson Pro';
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
+  color: $text-color;
+  font-style: italic;
+}

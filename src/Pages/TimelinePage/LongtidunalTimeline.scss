@@ -1,0 +1,62 @@
+@import '../../variables';
+
+.role-details-vertical {
+	margin-top: 1rem;
+	margin-left: 1rem;
+	@media only screen and (max-width: 767px) {
+		margin-left: 0.8rem;
+	}
+	width: 90%;
+	li {
+		color: $inverse-theme;
+		text-align: justify;
+		margin-bottom: 1rem;
+	}
+
+	p {
+		color: $inverse-theme;
+		margin-bottom: 1rem;
+		text-align: justify;
+	}
+	
+}
+
+@keyframes animation-timeline-current {
+	from {
+		transform: translate(-50%, -50%) scale(0);
+		opacity: 1;
+	}
+	to {
+		transform: translate(-50%, -50%) scale(1);
+		opacity: 0;
+	}
+}
+
+
+.vertical-timeline-element-icon{
+	transform: scale(0.4) !important;
+}
+
+.vertical-timeline-element-content {
+	margin-left: 30px !important;
+	margin-right: 30px !important;
+
+	@media only screen and (max-width: 1200px) {
+		margin-left: 50px !important;
+	}
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date, .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
+	right: 115% !important;
+}
+
+.vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--left .vertical-timeline-element-content .vertical-timeline-element-date, .vertical-timeline--two-columns .vertical-timeline-element:nth-child(odd):not(.vertical-timeline-element--right) .vertical-timeline-element-content .vertical-timeline-element-date {
+	left: 115% !important;
+}
+
+
+.vertical-timeline--animate .vertical-timeline-element-content {
+	background: linear-gradient(-45deg,
+	color-mix(in srgb, $background-color 40.5%, $secondary-color), 
+	color-mix(in srgb, $background-color 40.5%, $tertiary-color)) !important;
+}

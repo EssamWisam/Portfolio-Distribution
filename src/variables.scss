@@ -1,0 +1,24 @@
+$background-color: #0f1423;
+$secondary-color: #42d3ce;
+$tertiary-color: #647eff;
+$theme: black;
+$inverse-theme: white;
+$secondary-color-affected: color-mix(in srgb, $secondary-color 65.5%, $theme);
+$tertiary-color-affected: color-mix(in srgb, $tertiary-color 65.5%, $theme); 
+$border-color: color-mix(in srgb, $background-color 85.5%, $inverse-theme);
+$text-color:  color-mix(in srgb, $background-color 25.5%, $inverse-theme);
+$hover-background-color: color-mix(in srgb, $background-color 84.5%, $inverse-theme);
+
+
+ :root {
+   --background-color: #{$background-color};
+   --secondary-color: #{$secondary-color};
+   --tertiary-color: #{$tertiary-color};
+   --secondary-color-affected: #{$secondary-color-affected};
+   --tertiary-color-affected: #{$tertiary-color-affected};
+   --border-color: #{$border-color};
+   --text-color: #{$text-color};
+   --hover-background-color: #{$hover-background-color};
+   --theme: #{$theme};
+   --inverse-theme: #{$inverse-theme};
+ }

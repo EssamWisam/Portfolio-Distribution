@@ -1,0 +1,139 @@
+@import '../../variables';
+
+.horizontal.timeline {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: 6rem auto;
+
+	
+	&:before {
+		content: '';
+		display: block;
+		position: absolute;
+		
+		width: 100%;
+		height: .2em;
+		background-color: lighten(#000, 95%);
+	}
+	
+	.line {
+		display: block;
+		position: absolute;
+		
+		width: 25%;
+		height: .2em;
+		background-color: $secondary-color;
+	}
+	
+	.steps {
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		
+		.step {
+            cursor: pointer;
+			display: block;
+			position: relative;
+			bottom: calc(100% + 1em);
+			padding: .33em;
+			margin: 0 2em;
+			box-sizing: content-box;
+
+			color: $secondary-color;
+			background-color: currentColor;
+			border: .25em solid $inverse-theme;
+			border-radius: 50%;
+			z-index: 500;
+
+			&:first-child {
+				margin-left: 0;
+			}
+
+			span {
+				@media only screen and (max-width: 767px) {
+					font-size: 0.9rem;
+				}
+			}
+
+			.role-company {
+				position: absolute;
+				top: calc(100% + 1em);
+				left: 50%;
+				transform: translateX(-50%);
+				color: $text-color;
+				text-align: center;
+				.role {
+					font-weight:600;
+				}
+			}
+
+			
+		
+			.date {
+				position: absolute;
+				top: calc(100% - 3em);
+				left: 50%;
+				transform: translateX(-50%);
+				white-space: nowrap;
+				color: $text-color;
+			}
+
+
+
+			&.current {
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+
+					padding: 1em;
+					background-color: currentColor;
+					border-radius: 50%;
+					opacity: 0;
+					z-index: -1;
+
+					animation-name: animation-timeline-current;
+					animation-duration: 2s;
+					animation-iteration-count: infinite;
+					animation-timing-function: ease-out;
+				}
+
+			
+			}
+		}	
+	}
+}
+
+.role-details {
+	margin-top: 11rem;
+	margin-left: 3rem;
+	@media only screen and (max-width: 767px) {
+		margin-left: 0.8rem;
+	}
+	width: 90%;
+	li {
+		color: $text-color;
+		margin-bottom: 1rem;
+		text-align: justify;
+	}
+
+	p {
+		color: $text-color;
+		margin-bottom: 1rem;
+		text-align: justify;
+	}
+	h2 {
+		margin-bottom: 1rem;
+		color: $text-color;
+	}
+}

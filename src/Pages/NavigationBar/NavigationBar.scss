@@ -1,0 +1,121 @@
+@import '../../variables';
+
+
+.navigation {
+    display: flex;
+    align-items: center;
+    min-height: 9vh;
+    min-width: 100%;
+    padding: 0rem 1.5rem;
+    z-index: 10;
+    background: $background-color;
+    border-bottom: 2px solid $border-color;
+  
+    .logo {
+      margin-left: 20px;
+      padding-top:9px;
+      padding-bottom:9px;
+      cursor: pointer;
+      //font-family: 'Carter One';
+      h1 {
+        color: $text-color;
+        white-space: nowrap;
+        font-size: 35px;
+        line-height: 38px;
+      & {
+        transition: color 0.7s ease; // Add this line for a 0.7-second transition
+        &:hover {
+          color: color-mix(in srgb, $text-color 4.5%, $inverse-theme);
+        }
+      }
+      }
+     
+    }
+  
+    .menu-list {
+      list-style: none;
+      display: flex;
+      gap: 2.4rem;
+      justify-content: space-between;
+      align-items: center;
+      min-width: 65%;
+      margin: auto 20px auto 0;
+      padding: 20px 1px 20px 1px;
+      &.open {
+        display: block; // or any styles you want when the menu is open
+      }
+    }
+  
+    .humbarger {
+      margin-right: 20px;
+      display: none;
+      cursor: pointer;
+  
+      .bar {
+        width: 30px;
+        height: 2px;
+        margin: 7px;
+        background: $text-color;
+      }
+    }
+  
+    .menu-list li a {
+      color: $text-color;
+      font-size: 1.05rem;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: color 1s ease, border 1s ease;
+      text-decoration: none;
+      // on hover
+      &:hover {
+        color: color-mix(in srgb, $text-color 4.5%, $inverse-theme);
+      }
+    }
+  }
+  
+  /* Responsive Section */
+  
+  /* Tablet desktop :768px. */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navigation .menu-list {
+      width: 60%;
+  
+      li a {
+        font-size: 1rem;
+      }
+    }
+  }
+  
+  /* Large Mobile :480px. */
+  @media only screen and (max-width: 767px) {
+    .navigation .menu-list {
+      position: absolute;
+      top: 9vh;
+      left: 0;
+      min-width: 100%;
+      background: $background-color;
+      text-align: center;
+      display: none;
+  
+      li {
+        display: block;
+  
+        a {
+          display: block;
+          padding: 20px;
+          transition: color 1s ease, padding 1s ease, background-color 1s ease;
+  
+          &:hover {
+            color: $text-color;
+            background: $hover-background-color;
+          }
+        }
+      }
+    }
+  
+    .navigation .humbarger {
+      display: block;
+    }
+  }
+  
+  

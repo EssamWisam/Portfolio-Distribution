@@ -1,0 +1,14 @@
+@import '../../variables';
+
+.circles-wrapper {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  color: $text-color;
+
+
+}
+

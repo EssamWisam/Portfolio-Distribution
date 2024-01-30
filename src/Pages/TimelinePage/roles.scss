@@ -1,0 +1,19 @@
+@import '../../variables';
+
+.roles {
+  padding: 2rem;
+  //justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  .title {
+    background: -webkit-linear-gradient(45deg, color-mix(in srgb, $background-color 20.5%, $secondary-color) , $tertiary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .description {
+    color: $text-color;
+    font-style: italic;
+    font-size: 1rem;
+  }
+}

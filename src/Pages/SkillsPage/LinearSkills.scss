@@ -1,0 +1,25 @@
+@import '../../variables';
+
+.lines-wrapper {
+    h4 {
+        color: $text-color;
+    }
+}
+
+.progress {
+  width: 100%;
+  height: 10px;
+}
+.progress-wrap {
+   border-radius: 20px;
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
+  .progress-bar {
+    background: #ddd;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+}
+

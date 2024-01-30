@@ -1,0 +1,68 @@
+@import './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html, body {
+  min-width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background: -webkit-linear-gradient(-45deg, color-mix(in srgb, $background-color 90.5%, $theme), color-mix(in srgb, $background-color 70.5%, $theme));
+}
+
+
+
+// animated text
+
+// Colors
+$gradient-color-1: $secondary-color;
+$gradient-color-2: $tertiary-color;
+
+// Keyframes
+@keyframes animationgradienttitle {
+  0% {
+    background-position: 0 1600px;
+  }
+  100% {
+    background-position: 1600px 0;
+  }
+}
+
+
+.c-article {
+  &__header {
+    position: relative;
+  }
+  &__title {
+    font-size: 3em;
+    background: -webkit-linear-gradient(left, $gradient-color-1, $gradient-color-2, $gradient-color-1);
+    background-size: 1600px 200px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-duration: 3s;
+    animation-name: animationgradienttitle;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+  }
+}
+
+// scroll bar
+
+
+// change scrollbar size and color
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $tertiary-color;
+}
