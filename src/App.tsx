@@ -13,6 +13,7 @@ import { heroData, heroStyles } from './PagesData/HeroPage';
 import { timelineHeader, timelineStyles, timelineData } from './PagesData/TimelinePage';
 import { softSkillsData, techSkillsData } from './PagesData/SkillsPage';
 import { projectData, projectHeader, projectStyles } from './PagesData/ProjectsPage';
+import { blogData, blogHeader, blogStyles } from './PagesData/BlogsPage';
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,8 @@ const App: React.FC = () => {
       <TimelinePage timelineData={timelineData} timelineHeader={timelineHeader} timelineStyles={timelineStyles} />
       <SkillsPage softSkillsData={softSkillsData} techSkillsData={techSkillsData}/>
       <ProjectsPage projectHeader={projectHeader} projectStyles={projectStyles} projectData={projectData}  />
+      <ProjectsPage projectHeader={blogHeader} projectStyles={blogStyles} projectData={blogData}  />
+
     </div>
   );
 };

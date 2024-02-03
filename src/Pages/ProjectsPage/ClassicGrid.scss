@@ -9,81 +9,117 @@
     gap: 20px;
     max-width: 1200px;
     padding: 20px;
-  }
-  
-  .grid-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    height: 300px;
-  
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-  
-    .item-title {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      //background-color: rgba(0, 0, 0, 0.9);
-      //background: -webkit-linear-gradient(0deg, color-mix(in srgb, $background-color 20.5%, $secondary-color-affected) , $tertiary-color-affected);
-      background: lighten($background-color, 10%);
-      @if $theme == white {
-        background: darken($background-color, 10%) !important;
+
+    .grid-item {
+      position: relative;
+      overflow: hidden;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      height: 400px;
+    
+      img {
+        height: 210px;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
       }
-      color: #fff;
-      padding: 8px 15px;
-      font-size: 16px;
   
-      p {
-        font-size: 0.9rem;
-        opacity: 0.7;
-        font-weight: normal !important;
+      .special {
+        background: -webkit-linear-gradient(0deg, color-mix(in srgb, $background-color 20.5%, $secondary-color-affected) , $tertiary-color-affected);
+        border-radius: 20px;
+        font-size: 0.6rem;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 4px;
+        color: white;
+      }
+    
+      .item-title {
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        height: 190px;
+        width: 100%;
+        //background-color: rgba(0, 0, 0, 0.9);
+        //background: -webkit-linear-gradient(0deg, color-mix(in srgb, $background-color 20.5%, $secondary-color-affected) , $tertiary-color-affected);
+        background: lighten($background-color, 10%);
+        @if $theme == white {
+          background: darken($background-color, 10%) !important;
+        }
+        color: #fff;
+        padding: 8px 15px;
+        font-size: 16px;
+        h4 {
+          text-align: center;
+          font-size: 1.3rem;
+        }
+        p {
+          font-size: 0.8rem;
+          opacity: 0.7;
+          font-weight: normal !important;
+          text-align: center;
+        }
+        .item-skills {
+          display: flex;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 0rem;
+          margin-bottom: 0.5rem;
+          div {
+            margin: 0.5rem 0rem;
+            font-size: 0.7rem;
+            background: $background-color;
+            color: white;
+            padding: 6px;
+            border-radius: 30px;
+            opacity: 0.85;
+            //color: $tertiary-color-affected;
+          }
+        }
+        button {
+          margin: auto;
+          padding: 0.5rem 1.2rem;
+          border: white solid 1px;
+          border-radius: 30px;
+          // upon hover invert
+          &:hover {
+            color: $tertiary-color-affected;
+            background-color: white;
+          }
+        }
+        span {
+          margin-top: 0.5rem;
+          font-size: 0.9rem;
+        }
+      }
+    
+      &:hover {
+
+        img {
+          transform: scale(1.1); /* Zoom in the image as well */
+        }
+    
+        #project-icon {
+          display: block;
+        }
+  
+        .special {
+          display: none;
+        }
+      }
+    
+      #project-icon {
+        border-radius: 25%;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        width: 11%;
         display: none;
       }
     }
-  
-    &:hover {
-      p {
-        display: block;
-        animation: fade_in_show 0.5s
-       
-      }
-  
-      #project-icon {
-        display: block;
-      }
-    }
-
-    @keyframes fade_in_show {
-        0% {
-             opacity: 0;
-             transform: scale(0)
-        }
-   
-        100% {
-             opacity: 0.7;
-             transform: scale(1)
-        }
-   }
-  
-    #project-icon {
-      border-radius: 25%;
-      position: absolute;
-      top: 3px;
-      right: 3px;
-      width: 11%;
-      display: none;
-    }
-  }
-  
-  .content pre {
-    border-radius: 1rem !important;
+    
   }
   
