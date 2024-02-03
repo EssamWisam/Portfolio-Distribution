@@ -14,7 +14,7 @@ interface ProjectsPageProps {
 const ProjectsPage:  React.FC<ProjectsPageProps> = ({projectData, projectHeader, projectStyles}) => {
     const [activeTab, setActiveTab] = React.useState(projectHeader.activeTab);
     const tabs = projectHeader.tabs;
-  
+
     return (
       <section className="skills" id={projectHeader.sectionName}>
         <SectionHeader sectionName={projectHeader.sectionName}  description={projectHeader.description} isCentered={projectStyles.center}/>

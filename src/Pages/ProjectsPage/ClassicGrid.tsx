@@ -25,6 +25,23 @@ interface DataItem {
   const ClassicGrid: React.FC<Props> = ({ data, category='Featured', icon="FaGithub", buttonText="View Project" }) => {
     // keep only objects where cateogy=category
       const filteredData = (category !== '') ? data.filter(item => (item.categories).includes(category)) : data;
+
+    const [screenWidth, setScreenWidth] = React.useState(window.innerWidth);
+  
+    React.useEffect(() => {
+      const handleResize = () => {
+        setScreenWidth(window.innerWidth);
+      };
+  
+      // Add event listener for window resize
+      window.addEventListener('resize', handleResize);
+  
+      // Remove event listener on component unmount
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }, []);
+  
     return (
       <div className='grid'>
         {filteredData.map((item, index) => (
@@ -39,7 +56,7 @@ interface DataItem {
               <div className="item-title">
                 <h4>{item.title}</h4>
                 <p>
-                {(item.description.length > 110) ? item.description.substring(0, 75) + '...' : item.description}
+                {(item.description.length > ((screenWidth > 900) ? 110: 75) )? item.description.substring(0, (screenWidth > 900) ? 75: 50) + '...' : item.description}
                 </p>
                 <div className="item-skills">
                   {item.skills?.map((skill, index) => (
