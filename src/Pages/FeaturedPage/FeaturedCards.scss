@@ -1,0 +1,75 @@
+@import '../../variables';
+
+
+.c-fancy-cards-group {
+  scrollbar-color: lighten($background-color, 5%) !important;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c-fancy-card {
+  position: relative;
+  min-width: 350px;
+  max-width: 400px;
+  min-height: 350px;
+  margin: 0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: linear-gradient(147deg, lighten($background-color, 3%) 0%, lighten($background-color, 5%) 24%);
+  box-shadow: -1rem 0 3rem #000;
+  color: white;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    height: 60px;
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+    color: $text-color;
+    margin: 0.5rem 0;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: $text-color;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: justify;
+    height: 100px;
+  }
+  
+  img {
+      margin-bottom: 0.5rem;
+      min-width: 250px;
+      max-width: 350px;
+    border-radius: 1rem;
+  }
+  
+  button {
+    padding: 0.6rem;
+    color: white;
+    background-color: transparent;
+    border: white 1px solid;
+    border-radius: 2rem;
+    font-size: 0.9rem !important;
+  }
+
+  &:not(:first-child) {
+    margin-left: -130px;
+  }
+
+  &:hover {
+    transform: translate(0, -1rem);
+    margin-right: 20px;
+    + .c-fancy-card {
+      margin-left: 0;
+    }
+  }
+}

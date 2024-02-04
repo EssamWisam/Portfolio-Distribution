@@ -11,7 +11,7 @@ interface TimelinePageProps {
 
 const SectionHeader:  React.FC<TimelinePageProps> = ({sectionName, description, isCentered}) => {
     return (
-      <div>
+      <div className="title-container">
         <article className="c-article">
         <header className="c-article__header">
           <h1 style={{fontSize: '2.9rem', textAlign: (isCentered) ? "center" : "left"}} className="c-article__title">

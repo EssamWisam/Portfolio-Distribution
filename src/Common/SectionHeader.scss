@@ -1,5 +1,9 @@
 @import '../variables';
 
+.title-container {
+  margin-top: 4rem;
+}
+
 .title {
     background: -webkit-linear-gradient(45deg, color-mix(in srgb, $background-color 20.5%, $secondary-color) , $tertiary-color);
     -webkit-background-clip: text;
