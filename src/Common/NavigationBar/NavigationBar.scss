@@ -118,4 +118,26 @@
     }
   }
   
-  
+  .scrolling-dots {
+    position: fixed; 
+    top: 50%; 
+    right: 1.2rem; 
+    padding: 10px;
+    border-radius: 1rem;
+    transform: translateY(-50%);
+    z-index: 10; 
+    flex-direction: column;
+    background-color: lighten($background-color, 4%);
+    opacity: 0.6;
+    div {
+      color: $text-color;
+    }
+    @media screen and (max-width: 900px) {
+      display: none;
+      
+    }
+    .active {
+      font-size: 1.3rem;
+      color: $inverse-theme;
+    }
+  }

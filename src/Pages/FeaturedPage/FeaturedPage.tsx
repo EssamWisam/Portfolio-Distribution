@@ -2,7 +2,7 @@ import React from "react";
 import { formatText } from "../utils";
 import FeaturedCarousel from "./FeaturedCarousel";
 import FeaturedCardsGroup from "./FeaturedCards";
-import  SectionHeader  from "../../Common/SectionHeader";
+import  SectionHeader  from "../../Common/SectionHeader/SectionHeader";
 
 interface ProjectsPageProps {
     featuredData: any;
@@ -13,7 +13,7 @@ interface ProjectsPageProps {
 const FeaturedPage:  React.FC<ProjectsPageProps> = ({featuredData, featuredHeader, featuredStyles}) => {
 
     return (
-      <section className="skills" id={featuredHeader.sectionName}>
+      <section className="skills" id={featuredHeader.id}>
         <SectionHeader sectionName={featuredHeader.sectionName}  description={featuredHeader.description} isCentered={featuredStyles.center}/>
         <div >
           {/* <FeaturedCarousel featuredData={featuredData} featuredHeader={featuredHeader} featuredStyles={featuredStyles}/> */}

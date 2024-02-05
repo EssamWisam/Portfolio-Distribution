@@ -1,6 +1,7 @@
 
 export const timelineHeader = {
   sectionName: "Roles",
+  id: "Roles",
   description: "Throughout my career, I've immersed myself in [diverse roles] that have shaped my [professional journey]."
 }
 

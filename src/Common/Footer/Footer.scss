@@ -1,0 +1,170 @@
+@import '../../variables';
+
+.real-footer {
+footer {
+
+    background: color-mix(in srgb, $background-color 93.5%, black);
+  
+    height: auto;
+  
+    width: 100vw;
+  
+  
+    color: #fff;
+
+  }
+}
+  
+  .footer-content {
+
+    display: flex;
+    cursor: default;
+
+    align-items: center;
+  
+    justify-content: center;
+  
+    flex-direction: column;
+  
+    text-align: center;
+  
+    h3 {
+      font-size: 2.1rem;
+  
+      font-weight: 500;
+    
+      text-transform: capitalize;
+    
+      line-height: 3rem;
+      @media only screen and (max-width: 900px) {
+        font-size: 1.6rem !important;
+      }
+    }
+  
+    p {
+      max-width: 500px;
+  
+      margin: 5px auto;
+    
+      line-height: 28px;
+    
+      font-size: 14px;
+      padding: 0.5rem;
+    
+      color: #cacdd2;
+      @media only screen and (max-width: 900px) {
+        font-size: 0.9rem !important;
+      }
+    }
+  }
+  
+  
+  .socials {
+    list-style: none;
+  
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    margin: 1rem 0 3rem 0;
+  
+    li {
+      margin: 0 10px;
+    }
+  
+    a {
+      text-decoration: none;
+  
+      color: #fff;
+    
+      padding: 5px;
+      &:hover {
+        color: white;
+  
+      }
+    }
+  
+    a i {
+      font-size: 1.1rem;
+  
+      width: 20px;
+    
+      transition: color 0.4s ease;
+    }
+  
+    
+  }
+  
+  .footer-bottom {
+
+
+    background: color-mix(in srgb, $background-color 93.5%, black);
+  
+    width: 100vw;
+  
+    padding: 20px;
+  
+  
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+   
+    p {
+     // float: left;
+     font-size: 0.9rem;
+     @media (max-width: 900px) {
+      font-size: 0.7rem;
+     }
+    
+      word-spacing: 2px;
+    }
+  
+
+  
+    span {
+      text-transform: uppercase;
+    }
+  }
+  
+  .footer-menu {
+    float: right;
+  }
+  
+  .footer-menu ul {
+    display: flex;
+  }
+  
+  .footer-menu ul li {
+    padding-right: 10px;
+  
+    display: block;
+  }
+  
+  .footer-menu ul li a {
+    color: #cfd2d6;
+  
+    text-decoration: none;
+  }
+  
+  .footer-menu ul li a:hover {
+    color: white;
+  }
+  
+  @media (max-width: 900px) {
+    .footer-bottom p {
+      float: none;
+    }
+  
+    .footer-menu ul {
+      display: none;
+  
+      margin-top: 10px;
+  
+      margin-bottom: 20px;
+  
+      text-align: center;
+    }
+  }
+  

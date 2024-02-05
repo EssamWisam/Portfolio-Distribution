@@ -3,7 +3,7 @@ import { formatText } from "../utils";
 import TabComponent from "./TabComponent";
 import ModernGrid from "./ModernGrid";
 import ClassicGrid from "./ClassicGrid";
-import  SectionHeader  from "../../Common/SectionHeader";
+import  SectionHeader  from "../../Common/SectionHeader/SectionHeader";
 
 interface ProjectsPageProps {
     projectData: any;
@@ -16,7 +16,7 @@ const ProjectsPage:  React.FC<ProjectsPageProps> = ({projectData, projectHeader,
     const tabs = projectHeader.tabs;
 
     return (
-      <section className="skills" id={projectHeader.sectionName}>
+      <section className="skills" id={projectHeader.id}>
         <SectionHeader sectionName={projectHeader.sectionName}  description={projectHeader.description} isCentered={projectStyles.center}/>
         {!projectStyles.showBottom && <TabComponent activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} tabUI={projectStyles.tabUI}/>}
         <div style={{border: `1px ${getComputedStyle(document.documentElement).getPropertyValue('--tertiary-color-affected')} solid`, borderRadius:'2rem'}}>

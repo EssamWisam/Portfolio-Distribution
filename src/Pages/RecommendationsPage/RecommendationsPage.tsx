@@ -1,7 +1,7 @@
 import React from "react";
 import { formatText } from "../utils";
 import BasicRecommendations from "./BasicRecommendations";
-import  SectionHeader  from "../../Common/SectionHeader";
+import  SectionHeader  from "../../Common/SectionHeader/SectionHeader";
 import FancyRecommendations from "./FancyRecommendations";
 
 interface RecommendationsPageProps {
@@ -14,7 +14,7 @@ interface RecommendationsPageProps {
 const RecommendationsPage:  React.FC<RecommendationsPageProps> = ({recommendationsData, recommendationsHeader, recommendationsStyles}) => {
 
     return (
-      <section className="skills" id={recommendationsHeader.sectionName}>
+      <section className="skills" id={recommendationsHeader.id}>
         <SectionHeader sectionName={recommendationsHeader.sectionName}  description={recommendationsHeader.description} isCentered={recommendationsStyles.center}/>
         <div >
           <BasicRecommendations recommendationsData={recommendationsData} />

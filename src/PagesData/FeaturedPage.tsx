@@ -1,5 +1,6 @@
 export const featuredHeader = {
     sectionName: "YouTube",
+    id: "YouTube",
     description: "[Writing blogs] to share knowledge wasn't enough. I also have a [YouTube channel]:",
     featuredComment: "",
     buttonText: "View Playlist"

@@ -1,7 +1,9 @@
 import React from 'react';
+//@ts-ignore
+import Helmet from 'react-helmet';
 import './App.scss'; 
 // import components
-import NavigationBar from './Pages/NavigationBar/NavigationBar';
+import NavigationBar from './Common/NavigationBar/NavigationBar';
 import HeroPage from './Pages/HeroPage/HeroPage';
 import TimelinePage from './Pages/TimelinePage/TimelinePage';
 import SkillsPage from './Pages/SkillsPage/SkillsPage';
@@ -9,8 +11,9 @@ import ProjectsPage from './Pages/ProjectsPage/ProjectPage';
 import FeaturedPage from './Pages/FeaturedPage/FeaturedPage';
 import EducationPage from './Pages/EducationPage/EducationPage';
 import RecommendationsPage from './Pages/RecommendationsPage/RecommendationsPage';
-
+import Footer from './Common/Footer/Footer';
 //import data
+import { generalSetup } from './PagesData/General';
 import { navbarData, navbarStyles } from './PagesData/NavigationBar';
 import { heroData, heroStyles } from './PagesData/HeroPage';
 import { timelineHeader, timelineStyles, timelineData } from './PagesData/TimelinePage';
@@ -24,6 +27,10 @@ import { recommendationsData, recommendationsHeader, recommendationsStyles } fro
 const App: React.FC = () => {
   return (
     <div>
+      <Helmet>
+          <title>{generalSetup.title}</title>
+          <link rel="icon" href={generalSetup.favicon} />
+      </Helmet>
       <NavigationBar navbarData={navbarData} navbarStyles={navbarStyles} />
       <HeroPage heroData={heroData} heroStyles={heroStyles}/>
       <TimelinePage timelineData={timelineData} timelineHeader={timelineHeader} timelineStyles={timelineStyles} />
@@ -33,6 +40,7 @@ const App: React.FC = () => {
       <ProjectsPage projectHeader={blogHeader} projectStyles={blogStyles} projectData={blogData}  />
       <FeaturedPage featuredData={featuredData} featuredHeader={featuredHeader} featuredStyles={featuredStyles} />
       <RecommendationsPage recommendationsData={recommendationsData} recommendationsHeader={recommendationsHeader} recommendationsStyles={recommendationsStyles} />
+      <Footer />
     </div>
   );
 };

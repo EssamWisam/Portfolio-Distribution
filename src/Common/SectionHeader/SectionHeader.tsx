@@ -1,5 +1,5 @@
 import React from 'react';
-import { formatText } from '../Pages/utils';
+import { formatText } from '../../Pages/utils';
 
 import './SectionHeader.scss'; 
 

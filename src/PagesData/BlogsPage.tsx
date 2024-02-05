@@ -1,5 +1,6 @@
 export const blogHeader = {
   sectionName: "Blogs",
+  id: "Blogs",
   tabs: ["Featured", "NLP", "Machine Learning", "Machine Learning Mathematics", "Programming and Others"],
   activeTab: 'Featured',
   description: "Behind the practice conveyed in these projects, [lies valuable theory] that I like to [simplify and share with others in blogs]:",

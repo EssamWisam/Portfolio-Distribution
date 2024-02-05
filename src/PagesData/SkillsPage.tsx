@@ -1,5 +1,6 @@
 export const skillsHeader = {
   sectionName: "Skills & Technologies",
+  id: "Skills",
   description:
     "As a computer engineer, I have acquired a [diverse set of skills] that allow me to [excel in various roles and projects]. These include:",
   skillsComment:

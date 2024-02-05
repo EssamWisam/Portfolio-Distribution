@@ -35,7 +35,7 @@ const HeroPage: React.FC<HeroPageProps> = ({heroData, heroStyles}) => {
     const smallScreen = React.useMemo(() => screenWidth <= 900, [screenWidth]);
   
     return (
-      <section id="hero">
+      <section id={heroData.id}>
         <div className="hero-container" style={{
           display: (heroStyles.hideImage) ? 'block' : 'flex',
           flexDirection: (!smallScreen) ? (heroStyles.imageOnLeft) ? 'row-reverse' : 'row' : 'column-reverse',
@@ -63,8 +63,9 @@ const HeroPage: React.FC<HeroPageProps> = ({heroData, heroStyles}) => {
                 {heroData.reachOutBText}
                 <GoMail style={{marginLeft:'9px', transform: 'translateY(4px)'}} size={25}/>
                 </button>
-              <button style={{borderRadius: heroData.buttonBorderRadius}} className="download-cv-button">
-                {heroData.downloadBText}
+              <button 
+              style={{borderRadius: heroData.buttonBorderRadius}} className="download-cv-button">
+                <a href = {heroData.CV} >{heroData.downloadBText}</a>
                 <RiDownloadLine style={{marginLeft:'9px', transform: 'translateY(4px)'}} size={25} />
                 </button>
               {heroData.extraBText && <button 

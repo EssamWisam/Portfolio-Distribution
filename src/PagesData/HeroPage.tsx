@@ -1,4 +1,5 @@
 export const heroData = {
+    "id": "Home",
     "images": ["https://i.imgur.com/QNxLMh4.jpg", "https://i.imgur.com/epiM9fg.png"],
     "title": "Hey, I am Essam Wisam",
     "roles": ["Machine Learning Engineer", "Machine Learning Researcher", "Front-end Developer", "Cross-platform Developer", "Teaching Assistant"],
@@ -7,7 +8,7 @@ export const heroData = {
     "reachOutBText": "Reach Out",
     "email": "essamwisam@outlook.com",
     "downloadBText": "Download CV",
-    "CV": "https://drive.google.com/file/d/1CunAxxlbhY-L42WL0Nq1Q8Eb_DYRNQie/view?usp=sharing",
+    "CV": "https://drive.google.com/uc?export=download&id=1BQCs3wp6zQo_oE6Af1dBbUTpiPgiwsCa",
     "extraBText": "",
     "extraLink": "",
     "buttonBorderRadius": '3rem',

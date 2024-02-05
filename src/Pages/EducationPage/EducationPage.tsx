@@ -2,7 +2,7 @@ import React from "react";
 import { formatText } from "../utils";
 import CardSlider from "./CardSlider";
 import AcademicJourney from "./AcademicJourney";
-import  SectionHeader  from "../../Common/SectionHeader";
+import  SectionHeader  from "../../Common/SectionHeader/SectionHeader";
 
 interface EducationPageProps {
     educationData: any;
@@ -13,7 +13,7 @@ interface EducationPageProps {
 const EducationPage:  React.FC<EducationPageProps> = ({educationData, educationHeader, educationStyles}) => {
 
     return (
-      <section className="education" id={educationHeader.sectionName}>
+      <section className="education" id={educationHeader.id}>
         <SectionHeader sectionName={educationHeader.sectionName}  description={educationHeader.description} isCentered={educationStyles.center}/>
         <div >
           <AcademicJourney educationData={educationData}/>

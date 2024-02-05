@@ -1,5 +1,6 @@
 export const educationHeader = {
     sectionName: "Education",
+    id: "Education",
     description: "Besides this work is [great deal] of [education and autodidactisim]:",
     educationComment: "",
     sliderTitle: "Certificates",

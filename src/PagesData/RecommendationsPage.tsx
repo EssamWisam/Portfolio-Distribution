@@ -1,5 +1,6 @@
 export const recommendationsHeader = {
     sectionName: "Recommendations",
+    id: "Recommendations",
     description:
       "See what others that [I have worked with think about me]",
     recommendationsComment:

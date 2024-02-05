@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionHeader from '../../Common/SectionHeader';
+import SectionHeader from '../../Common/SectionHeader/SectionHeader';
 import HorizontalTimeline from './HorizontalTimeline';
 import LongtidunalTimeline from './LongtidunalTimeline';
 
@@ -11,7 +11,7 @@ interface TimelinePageProps {
 
 const TimelinePage:  React.FC<TimelinePageProps> = ({timelineData, timelineHeader, timelineStyles}) => {
     return (
-      <section className="roles" id={timelineHeader.sectionName}>
+      <section className="roles" id={timelineHeader.id}>
         <SectionHeader description={timelineHeader.description} isCentered={timelineStyles.center} sectionName={timelineHeader.sectionName} />
         <HorizontalTimeline timelineItems={timelineData} />
         {/* <LongtidunalTimeline timelineItems={timelineItems}/> */}

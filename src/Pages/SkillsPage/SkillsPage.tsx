@@ -1,5 +1,5 @@
 import React from "react";
-import SectionHeader from "../../Common/SectionHeader";
+import SectionHeader from "../../Common/SectionHeader/SectionHeader";
 import LinearSkills from "./LinearSkills";
 import CircularSkills from "./CircularSkills";
 import BubbleSkills from "./BubbleSkills";
@@ -15,7 +15,7 @@ interface SkillsPageProps {
 const SkillsPage: React.FC<SkillsPageProps> = ({skillsHeader, skillsStyles, softSkillsData, techSkillsData}) => {
 
   return (
-    <section className="skills" id={skillsHeader.sectionName}>
+    <section className="skills" id={skillsHeader.id}>
       <SectionHeader sectionName={skillsHeader.sectionName} description={skillsHeader.description} isCentered={skillsStyles.center} />
       <div style={{ whiteSpace: "nowrap" }}>
         {/* <LineSkillsComponent skillData={techData}/> */}
