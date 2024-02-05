@@ -2,12 +2,26 @@
 
 .title-container {
   margin-top: 4rem;
+  @media screen and (max-width: 900px) {
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: -1rem !important;
+  }
+}
+
+#comment {
+  @media screen and (max-width: 900px) {
+    padding: 1rem !important;
+  }
 }
 
 .title {
     background: -webkit-linear-gradient(45deg, color-mix(in srgb, $background-color 20.5%, $secondary-color) , $tertiary-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @media screen and (max-width: 900px) {
+    font-size: 2rem !important;
+    }
   }
   .description {
     color: $text-color;

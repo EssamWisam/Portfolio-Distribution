@@ -39,6 +39,7 @@ const SkillsPage: React.FC<SkillsPageProps> = ({skillsHeader, skillsStyles, soft
         dangerouslySetInnerHTML={{
           __html: formatText(skillsHeader.skillsComment),
         }}
+        id="comment"
       />
     </section>
   );

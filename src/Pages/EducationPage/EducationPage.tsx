@@ -19,7 +19,7 @@ const EducationPage:  React.FC<EducationPageProps> = ({educationData, educationH
           <AcademicJourney educationData={educationData}/>
           <CardSlider educationData={educationData}/>
         </div>
-        {educationHeader.educationComment !=="" && <p style={{textAlign: (educationStyles.center) ? "center" : "justify", marginBottom: '2rem', fontStyle:'normal'}} className="description" dangerouslySetInnerHTML={{__html: formatText(educationHeader.educationComment)}}/>}
+        {educationHeader.educationComment !=="" && <p id="comment" style={{textAlign: (educationStyles.center) ? "center" : "justify", marginBottom: '2rem', fontStyle:'normal'}} className="description" dangerouslySetInnerHTML={{__html: formatText(educationHeader.educationComment)}}/>}
       </section>
     )
   

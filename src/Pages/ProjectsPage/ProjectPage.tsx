@@ -23,7 +23,7 @@ const ProjectsPage:  React.FC<ProjectsPageProps> = ({projectData, projectHeader,
           <ClassicGrid buttonText={projectHeader.buttonText} key={activeTab} data={projectData} category={activeTab} icon={projectData.projectExtraLinkIcon}/>
         </div>
         {projectStyles.showBottom && <TabComponent activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} bottom={true} tabUI={projectStyles.tabUI}/>}
-        {projectHeader.projectsComment !=="" && <p style={{textAlign: (projectStyles.center) ? "center" : "justify", marginBottom: '2rem', fontStyle:'normal'}} className="description" dangerouslySetInnerHTML={{__html: formatText(projectHeader.projectsComment)}}/>}
+        {projectHeader.projectsComment !=="" && <p id="comment" style={{textAlign: (projectStyles.center) ? "center" : "justify", marginBottom: '2rem', fontStyle:'normal'}} className="description" dangerouslySetInnerHTML={{__html: formatText(projectHeader.projectsComment)}}/>}
       </section>
     )
   

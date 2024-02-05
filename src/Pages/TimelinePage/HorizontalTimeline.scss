@@ -8,7 +8,9 @@
 	align-items: center;
 	width: 90%;
 	margin: 6rem auto;
-
+	@media only screen and (max-width: 767px) {
+		width: 80%;
+	}
 	
 	&:before {
 		content: '';
@@ -58,7 +60,7 @@
 
 			span {
 				@media only screen and (max-width: 767px) {
-					font-size: 0.9rem;
+					font-size: 0.8rem;
 				}
 			}
 

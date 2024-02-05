@@ -20,7 +20,7 @@ const RecommendationsPage:  React.FC<RecommendationsPageProps> = ({recommendatio
           <BasicRecommendations recommendationsData={recommendationsData} />
           {/* <FancyRecommendations  recommendationsData={recommendationsData} /> */}
         </div>
-        {recommendationsHeader.recommendationsComment !=="" && <p style={{textAlign: (recommendationsStyles.center) ? "center" : "justify", marginBottom: '2rem', fontStyle:'normal'}} className="description" dangerouslySetInnerHTML={{__html: formatText(recommendationsHeader.recommendationsComment)}}/>}
+        {recommendationsHeader.recommendationsComment !=="" && <p id="comment" style={{textAlign: (recommendationsStyles.center) ? "center" : "justify", marginBottom: '2rem', fontStyle:'normal'}} className="description" dangerouslySetInnerHTML={{__html: formatText(recommendationsHeader.recommendationsComment)}}/>}
       </section>
     )
   

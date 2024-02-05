@@ -47,7 +47,6 @@ const HeroPage: React.FC<HeroPageProps> = ({heroData, heroStyles}) => {
               sequence={heroData.roles.flatMap((item:string) => [item, heroData.roleDuration])}
               wrapper="span"
               speed={50}
-              //style={{ fontSize: '2em', display: 'inline-block' }}
               repeat={(heroData.roles.length > 1) ? Infinity : 1}
              />
               </h2>
