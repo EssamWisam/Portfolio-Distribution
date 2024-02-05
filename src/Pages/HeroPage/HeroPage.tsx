@@ -39,7 +39,6 @@ const HeroPage: React.FC<HeroPageProps> = ({heroData, heroStyles}) => {
         <div className="hero-container" style={{
           display: (heroStyles.hideImage) ? 'block' : 'flex',
           flexDirection: (!smallScreen) ? (heroStyles.imageOnLeft) ? 'row-reverse' : 'row' : 'column-reverse',
-          
           }}>
           <div className="text-container">
             <h1 style={{fontSize: heroStyles.fontSizes[0], textAlign: (heroStyles.center || smallScreen) ? 'center' : 'left'}}>{heroData.title}</h1>

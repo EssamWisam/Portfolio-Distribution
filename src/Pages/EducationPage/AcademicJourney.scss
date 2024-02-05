@@ -1,0 +1,34 @@
+@import '../../variables';
+
+.educational-cards {
+	margin-bottom: 2rem;
+.education-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	color: $text-color;
+	margin-bottom: 1.5rem;
+	@media screen and (max-width: 900px) {
+		padding: 1rem;
+	}
+	.circle {
+		@media screen and (max-width: 900px) {
+			display: none;
+		}
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 150px;
+		height: 150px;
+		background-size: cover;
+		img {
+			cursor: pointer;
+			width: 100%; /* Ensure the image takes up 100% of the container */
+			height: 100%;
+			object-fit: cover; /* Maintain aspect ratio and cover the container */
+			border-radius: 50%;
+		}
+	}
+}
+}

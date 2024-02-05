@@ -7,6 +7,7 @@ import TimelinePage from './Pages/TimelinePage/TimelinePage';
 import SkillsPage from './Pages/SkillsPage/SkillsPage';
 import ProjectsPage from './Pages/ProjectsPage/ProjectPage';
 import FeaturedPage from './Pages/FeaturedPage/FeaturedPage';
+import EducationPage from './Pages/EducationPage/EducationPage';
 import RecommendationsPage from './Pages/RecommendationsPage/RecommendationsPage';
 
 //import data
@@ -17,6 +18,7 @@ import { softSkillsData, techSkillsData, skillsHeader, skillsStyles } from './Pa
 import { projectData, projectHeader, projectStyles } from './PagesData/ProjectsPage';
 import { blogData, blogHeader, blogStyles } from './PagesData/BlogsPage';
 import { featuredData, featuredHeader, featuredStyles } from './PagesData/FeaturedPage';
+import { educationData, educationHeader, educationStyles } from './PagesData/EducationPage';
 import { recommendationsData, recommendationsHeader, recommendationsStyles } from './PagesData/RecommendationsPage';
 
 const App: React.FC = () => {
@@ -27,6 +29,7 @@ const App: React.FC = () => {
       <TimelinePage timelineData={timelineData} timelineHeader={timelineHeader} timelineStyles={timelineStyles} />
       <SkillsPage skillsStyles={skillsStyles} skillsHeader={skillsHeader} softSkillsData={softSkillsData} techSkillsData={techSkillsData}/>
       <ProjectsPage projectHeader={projectHeader} projectStyles={projectStyles} projectData={projectData}  />
+      <EducationPage educationData={educationData} educationHeader={educationHeader} educationStyles={educationStyles} />
       <ProjectsPage projectHeader={blogHeader} projectStyles={blogStyles} projectData={blogData}  />
       <FeaturedPage featuredData={featuredData} featuredHeader={featuredHeader} featuredStyles={featuredStyles} />
       <RecommendationsPage recommendationsData={recommendationsData} recommendationsHeader={recommendationsHeader} recommendationsStyles={recommendationsStyles} />

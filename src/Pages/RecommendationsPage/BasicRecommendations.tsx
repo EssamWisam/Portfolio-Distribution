@@ -15,13 +15,7 @@ interface IntentCardProps {
   
 const BasicCard: React.FC<IntentCardProps> = ({ quote, name, role, date, link, img = "",}) => {  
     return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
+      <div style={{display: 'flex', justifyContent:'center', alignItems: 'center'}}>
         <div className="testimonial">
           <div className="testimonial-body">
             <p dangerouslySetInnerHTML={{ __html: quote }} />
@@ -56,7 +50,7 @@ interface FeaturedCardsGroupProps {
 
 const BasicRecommendations: React.FC<FeaturedCardsGroupProps> = ({ recommendationsData }) => {
   return (
-    <div style={{display: 'flex', flexDirection: 'row', justifyContent:'center'}}>
+    <div className="test-container" >
       {
         recommendationsData.map((card:any, index:number) => (
           <BasicCard key={index} {...card} />
