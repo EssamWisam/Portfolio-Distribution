@@ -1,5 +1,6 @@
 export const navbarData = {
   logo: "ESSAM WISAM",
+  
   pages: [
     "Home",
     "Roles",
@@ -10,6 +11,7 @@ export const navbarData = {
     "YouTube",
     "Recommendations",
   ],
+
   icons: [
     "MdHome",
     "MdWork",
@@ -21,7 +23,10 @@ export const navbarData = {
     "MdPeople",
   ],
 };
+
 export const navbarStyles = {
+
   showIcons: false,
+
   rounded: false,
 };

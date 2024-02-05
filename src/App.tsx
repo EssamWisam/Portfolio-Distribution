@@ -1,6 +1,4 @@
 import React from 'react';
-//@ts-ignore
-import Helmet from 'react-helmet';
 import './App.scss'; 
 // import components
 import NavigationBar from './Common/NavigationBar/NavigationBar';
@@ -25,12 +23,27 @@ import { educationData, educationHeader, educationStyles } from './PagesData/Edu
 import { recommendationsData, recommendationsHeader, recommendationsStyles } from './PagesData/RecommendationsPage';
 
 const App: React.FC = () => {
+  // set theme
+  React.useEffect(() => {
+    document.documentElement.style.setProperty('--background-color', generalSetup.backgroundColor);
+    document.documentElement.style.setProperty('--secondary-color', generalSetup.secondaryColor);
+    document.documentElement.style.setProperty('--tertiary-color', generalSetup.tertiaryColor);
+    document.documentElement.style.setProperty('--theme', generalSetup.theme);
+    document.documentElement.style.setProperty('--inverse-theme', generalSetup.inverseTheme);
+
+      // Set page title
+      document.title = generalSetup.title;
+
+      // Set favicon
+      const faviconLink = document.querySelector("link[rel~='icon']");
+      if (faviconLink) {
+        //@ts-ignore
+        faviconLink.href = generalSetup.favicon;
+        }
+
+  }, []);
   return (
     <div>
-      <Helmet>
-          <title>{generalSetup.title}</title>
-          <link rel="icon" href={generalSetup.favicon} />
-      </Helmet>
       <NavigationBar navbarData={navbarData} navbarStyles={navbarStyles} />
       <HeroPage heroData={heroData} heroStyles={heroStyles}/>
       <TimelinePage timelineData={timelineData} timelineHeader={timelineHeader} timelineStyles={timelineStyles} />
@@ -40,7 +53,7 @@ const App: React.FC = () => {
       <ProjectsPage projectHeader={blogHeader} projectStyles={blogStyles} projectData={blogData}  />
       <FeaturedPage featuredData={featuredData} featuredHeader={featuredHeader} featuredStyles={featuredStyles} />
       <RecommendationsPage recommendationsData={recommendationsData} recommendationsHeader={recommendationsHeader} recommendationsStyles={recommendationsStyles} />
-      <Footer />
+      <Footer heroData={heroData}/>
     </div>
   );
 };
