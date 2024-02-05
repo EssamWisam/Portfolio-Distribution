@@ -6,25 +6,17 @@ import BubbleSkills from "./BubbleSkills";
 import { formatText } from "../utils";
 
 interface SkillsPageProps {
+    skillsHeader: any;
+    skillsStyles: any;
     softSkillsData: any[];
     techSkillsData: any[];
 }
 
-const SkillsPage: React.FC<SkillsPageProps> = ({softSkillsData, techSkillsData}) => {
-  const skillsData = {
-    sectionName: "Skills & Technologies",
-    description:
-      "As a computer engineer, I have acquired a [diverse set of skills] that allow me to [excel in various roles and projects]. These include:",
-    skillsComment:
-      "For a more [comprehensive or specific] list check the resume or <a href='https://www.linkedin.com/in/essamwisam/'>[Linkedin]</a>.",
-  };
+const SkillsPage: React.FC<SkillsPageProps> = ({skillsHeader, skillsStyles, softSkillsData, techSkillsData}) => {
 
-  const skillStyles = {
-    center: false,
-  };
   return (
-    <section className="skills" id={skillsData.sectionName}>
-      <SectionHeader sectionName={skillsData.sectionName} description={skillsData.description} isCentered={skillStyles.center} />
+    <section className="skills" id={skillsHeader.sectionName}>
+      <SectionHeader sectionName={skillsHeader.sectionName} description={skillsHeader.description} isCentered={skillsStyles.center} />
       <div style={{ whiteSpace: "nowrap" }}>
         {/* <LineSkillsComponent skillData={techData}/> */}
         {/* <LineSkillsComponent skillData={softSkillData} color="secondary"/> */}
@@ -39,13 +31,13 @@ const SkillsPage: React.FC<SkillsPageProps> = ({softSkillsData, techSkillsData})
       {/* <SkillComponent skills={softSkillData} color="secondary" /> */}
       <p
         style={{
-          textAlign: skillStyles.center ? "center" : "justify",
+          textAlign: skillsStyles.center ? "center" : "justify",
           marginBottom: "2rem",
           fontStyle: "normal",
         }}
         className="description"
         dangerouslySetInnerHTML={{
-          __html: formatText(skillsData.skillsComment),
+          __html: formatText(skillsHeader.skillsComment),
         }}
       />
     </section>
