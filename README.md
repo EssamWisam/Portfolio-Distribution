@@ -57,6 +57,7 @@ It should be obvious how to reorder and remove sections once you check `App.ts`.
 
 - This deserves much better documentation so I will likely get back to that.
 - You are more than welcome to contribute with style improvements or new components for individual sections. Hopefully, the folder structure will be welcoming for that.
+- Color generalizing is quite poor for light themes. Let's look into that later.
 - Don't hesitate to reach out in case you face any difficulties (issues are your best bet if they are general problems).
 
 Thanks you!
