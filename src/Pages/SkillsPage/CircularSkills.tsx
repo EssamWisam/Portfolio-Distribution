@@ -1,6 +1,6 @@
 import { PercentageCircle } from "react-best-percentage-circle";
 import React from "react";
-import "CircularSkills.scss";
+import "./CircularSkills.scss";
 
 interface Skill {
   value: number;

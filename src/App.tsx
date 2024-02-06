@@ -32,7 +32,7 @@ const App: React.FC = () => {
     document.documentElement.style.setProperty('--inverse-theme', generalSetup.inverseTheme);
 
       // Set page title
-      document.title = generalSetup.title;
+      document.title = generalSetup.title.toString();
 
       // Set favicon
       const faviconLink = document.querySelector("link[rel~='icon']");

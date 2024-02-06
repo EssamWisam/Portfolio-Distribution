@@ -1,3 +1,5 @@
+import { rand } from "../Pages/utils";
+
 export const blogHeader = {
   sectionName: "Blogs",
   id: "Blogs",
@@ -11,8 +13,9 @@ export const blogHeader = {
 
 export const blogStyles = {
   "center": false,
-  "tabUI": true,
-  "showBottom": false
+  "tabUI": rand({"true":0.7, "false":0.3}),
+  "showBottom": rand({"true": 0.05, "false": 0.95}),
+  "theme": rand({"ClassicGrid":0.7, "ModernGrid":0.3}),
 }
 
 export const blogData = [

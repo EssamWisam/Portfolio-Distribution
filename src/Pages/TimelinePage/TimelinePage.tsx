@@ -13,8 +13,8 @@ const TimelinePage:  React.FC<TimelinePageProps> = ({timelineData, timelineHeade
     return (
       <section className="roles" id={timelineHeader.id}>
         <SectionHeader description={timelineHeader.description} isCentered={timelineStyles.center} sectionName={timelineHeader.sectionName} />
-        <HorizontalTimeline timelineItems={timelineData} />
-        {/* <LongtidunalTimeline timelineItems={timelineItems}/> */}
+        {timelineStyles.theme === "HorizontalTimeline" && <HorizontalTimeline timelineItems={timelineData} />}
+        {timelineStyles.theme === "LongtidunalTimeline" && <LongtidunalTimeline timelineItems={timelineData}/>}
       </section>
     )
   

@@ -7,7 +7,11 @@
   max-width: 900px;
   margin: auto;
   //background: color-mix(in srgb, $background-color 90.5%, $inverse-theme);
-  background: linear-gradient(147deg, lighten($background-color, 8%) 0%, lighten($background-color, 10%) 24%);
+  background: linear-gradient(147deg, 
+  color-mix(in srgb, $tertiary-color 20.5%, $theme)
+  0%, 
+  color-mix(in srgb, $tertiary-color 25.5%, $theme)
+  24%);
 
   box-shadow: 0px 14px 80px $background-color;
   padding: 25px;
@@ -24,9 +28,8 @@
 
   @media screen and (max-width: 768px) {
     max-width: 400px;
-    min-height: 500px;
+    min-height: 450px;
     height: auto;
-    margin: 180px auto;
   }
 
 
@@ -38,8 +41,9 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 968px) {
       flex-direction: column;
+
     }
 
     &.swiper-slide-active {
@@ -70,6 +74,10 @@
 
   &__img {
     // width: 40%;
+    @media screen and (max-width: 968px) {
+      display: none;
+
+    }
     width: 400px;
     flex-shrink: 0;
     height: 300px;
@@ -127,7 +135,7 @@
     text-align: left;
     @media screen and (max-width: 992px) {
       // width: 55%;
-      transform: translateY(-20%);
+      transform: translateY(40%);
     }
 
     @media screen and (max-width: 768px) {
@@ -172,7 +180,7 @@
 
   &__button {
     display: inline-flex;
-    background-image: linear-gradient(147deg, $secondary-color 0%, $tertiary-color 74%);
+    background-image: linear-gradient(147deg, $secondary-color-affected 0%, $tertiary-color-affected 74%);
     padding: 15px 35px;
     border-radius: 50px;
     color: #fff;

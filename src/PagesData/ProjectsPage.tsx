@@ -1,3 +1,5 @@
+import { rand } from "../Pages/utils";
+
 export const projectHeader = {
   sectionName: "Projects",
   id: "Projects",
@@ -11,8 +13,9 @@ export const projectHeader = {
 
 export const projectStyles = {
   "center": false,
-  "tabUI": true,
-  "showBottom": false
+  "tabUI": rand({"true":0.7, "false":0.3}),
+  "showBottom": rand({"true": 0.05, "false": 0.95}),
+  "theme": rand({"ClassicGrid":0.3, "ModernGrid":0.7}),
 }
 
 export const projectData = [

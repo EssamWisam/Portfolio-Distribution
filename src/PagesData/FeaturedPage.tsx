@@ -1,3 +1,5 @@
+import { rand } from "../Pages/utils";
+
 export const featuredHeader = {
     sectionName: "YouTube",
     id: "YouTube",
@@ -7,8 +9,9 @@ export const featuredHeader = {
   }
   
   export const featuredStyles = {
-    "center": false,
-    "direction": 'left'
+    center: false,
+    theme: rand({"FeaturedCardsGroup":0.5, "FeaturedCarousel":0.5}),
+    direction: 'left'
   }
   
   export const featuredData = [

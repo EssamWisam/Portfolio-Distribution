@@ -5,11 +5,11 @@ import { Swipe } from 'auto-swipe';
 
 
 
-const CardSlider: React.FC<{ educationData: any }> = ({ educationData }) => {
+const CardSlider: React.FC<{ educationData: any, educationStyles: any }> = ({ educationData, educationStyles }) => {
   return (
       <div>
         <h3 className="certificates-title">Certificates</h3>
-        <Swipe duration={30000}>
+        <Swipe duration={30000} dir={educationStyles.scrollDirection}>
         {educationData.certificates.map((certificate:any, index:number) => (
           <a href={certificate.link} target="_blank" key={index}>
           <div className="certificate-container" key={index}>

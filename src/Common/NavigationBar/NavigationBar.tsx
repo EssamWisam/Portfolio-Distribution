@@ -46,7 +46,7 @@ const NavigationBar: React.FC<NavigationBarProps> = ({navbarData, navbarStyles})
               borderBottomLeftRadius: (navbarStyles.rounded) ? (navbarStyles.showIcons) ? '3rem' : '2rem' : '0rem', borderBottomRightRadius: (navbarStyles.rounded) ? (navbarStyles.showIcons) ? '3rem' : '2rem' : '0rem', 
             }}>
         <div className="logo">
-          <h1>{navbarData.logo}</h1>
+          { <h1>{navbarData.logo}</h1>}
         </div>
         <ul className={`menu-list ${menuOpen ? 'open' : ''}`}>
           {navbarData.pages.map((page:any, index:number) => (

@@ -1,3 +1,4 @@
+import { rand } from "../Pages/utils";
 
 export const timelineHeader = {
   sectionName: "Roles",
@@ -6,7 +7,8 @@ export const timelineHeader = {
 }
 
 export const timelineStyles = {
-  "center": false
+  "center": false,
+  "theme": rand({"HorizontalTimeline":0.65, "LongtidunalTimeline":0.35}),
 }
 
 export const timelineData = [

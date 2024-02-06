@@ -1,3 +1,5 @@
+import { rand } from "../Pages/utils";
+
 export const navbarData = {
   logo: "ESSAM WISAM",
   
@@ -26,7 +28,7 @@ export const navbarData = {
 
 export const navbarStyles = {
 
-  showIcons: false,
+  showIcons: rand({"true":0.3, "false":0.7} ), 
 
-  rounded: false,
+  rounded: rand({"true":0.35, "false":0.65} ),
 };

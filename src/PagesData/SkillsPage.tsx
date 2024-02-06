@@ -1,3 +1,5 @@
+import { rand } from "../Pages/utils";
+
 export const skillsHeader = {
   sectionName: "Skills & Technologies",
   id: "Skills",
@@ -9,6 +11,7 @@ export const skillsHeader = {
 
 export const skillsStyles = {
   "center": false,
+  "theme": rand({"LinearSkills":0.4, "CircularSkills":0.45, "BubbleSkills":0.15}),
 }
 
 export const techSkillsData = [

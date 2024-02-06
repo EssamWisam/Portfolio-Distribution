@@ -32,7 +32,7 @@ const TestimonialSlider: React.FC<FeaturedCardsGroupProps> = ({recommendationsDa
           <label key={index} className="item" htmlFor={`t-${index + 1}`}>
             {testimonial.img !== "" && <img src={testimonial.img} alt="" />}
             <p>{testimonial.quote}</p>
-            <div className="testimonial-footer" style={{background: 'none', padding: '5px'}}>
+            <div className="testimonial-footer" style={{background: 'none !important', padding: '5px'}}>
               <div className="main-footer-wrapper">
                 <div className="bottom-group">
                   <h3>{testimonial.name}</h3>

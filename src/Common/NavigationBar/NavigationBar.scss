@@ -14,7 +14,7 @@
     .logo {
       margin-left: 20px;
       padding-top:9px;
-      padding-bottom:9px;
+      padding-bottom:1px;
       cursor: pointer;
       //font-family: 'Carter One';
       h1 {
@@ -127,7 +127,7 @@
     transform: translateY(-50%);
     z-index: 10; 
     flex-direction: column;
-    background-color: lighten($background-color, 4%);
+    background-color:  color-mix(in srgb, $background-color 90.5%, $inverse-theme);
     opacity: 0.6;
     div {
       color: $text-color;

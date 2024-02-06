@@ -16,8 +16,8 @@ const FeaturedPage:  React.FC<ProjectsPageProps> = ({featuredData, featuredHeade
       <section className="skills" id={featuredHeader.id}>
         <SectionHeader sectionName={featuredHeader.sectionName}  description={featuredHeader.description} isCentered={featuredStyles.center}/>
         <div >
-          {/* <FeaturedCarousel featuredData={featuredData} featuredHeader={featuredHeader} featuredStyles={featuredStyles}/> */}
-          <FeaturedCardsGroup featuredCards={featuredData} buttonText={featuredHeader.buttonText}/>
+          {featuredStyles.theme==="FeaturedCarousel" && <FeaturedCarousel featuredData={featuredData} featuredHeader={featuredHeader} featuredStyles={featuredStyles}/>}
+          {featuredStyles.theme==="FeaturedCardsGroup" && <FeaturedCardsGroup featuredCards={featuredData} buttonText={featuredHeader.buttonText}/>}
         </div>
         {featuredHeader.featuredComment !=="" && <p id="comment" style={{textAlign: (featuredStyles.center) ? "center" : "justify", marginBottom: '2rem', fontStyle:'normal'}} className="description" dangerouslySetInnerHTML={{__html: formatText(featuredHeader.featuredComment)}}/>}
       </section>

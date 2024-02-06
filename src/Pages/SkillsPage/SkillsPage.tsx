@@ -17,22 +17,20 @@ const SkillsPage: React.FC<SkillsPageProps> = ({skillsHeader, skillsStyles, soft
   return (
     <section className="skills" id={skillsHeader.id}>
       <SectionHeader sectionName={skillsHeader.sectionName} description={skillsHeader.description} isCentered={skillsStyles.center} />
-      <div style={{ whiteSpace: "nowrap" }}>
-        {/* <LineSkillsComponent skillData={techData}/> */}
-        {/* <LineSkillsComponent skillData={softSkillData} color="secondary"/> */}
-
-        <BubbleSkills
-          skills={techSkillsData.concat(softSkillsData)}
-          id={"force-directed-graph"}
-        />
-        {/* <BubbleSkills skills={softSkillData} id={"force-directed-graph-2"}/> */}
-      </div>
-      {/* <SkillComponent skills={techData} /> */}
-      {/* <SkillComponent skills={softSkillData} color="secondary" /> */}
+      {skillsStyles.theme === "CircularSkills" && <div style={{ whiteSpace: "nowrap" }}>
+        <CircularSkills skills={techSkillsData} color="tertiary"/>
+        <CircularSkills skills={softSkillsData} color="secondary"/>
+      </div>}
+      {skillsStyles.theme === "LinearSkills" && <div style={{ whiteSpace: "nowrap" }}>
+        <LinearSkills skillData={techSkillsData} color="tertiary"/>
+        <LinearSkills skillData={softSkillsData} color="secondary"/>
+      </div>}
+        {skillsStyles.theme === "BubbleSkills" && <BubbleSkills skills={techSkillsData.concat(softSkillsData)} id={"force-directed-graph"} />}
       <p
         style={{
           textAlign: skillsStyles.center ? "center" : "justify",
           marginBottom: "2rem",
+          marginTop: "1rem",
           fontStyle: "normal",
         }}
         className="description"

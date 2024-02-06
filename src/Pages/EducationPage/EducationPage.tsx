@@ -17,7 +17,7 @@ const EducationPage:  React.FC<EducationPageProps> = ({educationData, educationH
         <SectionHeader sectionName={educationHeader.sectionName}  description={educationHeader.description} isCentered={educationStyles.center}/>
         <div >
           <AcademicJourney educationData={educationData}/>
-          <CardSlider educationData={educationData}/>
+          <CardSlider educationData={educationData} educationStyles={educationStyles}/>
         </div>
         {educationHeader.educationComment !=="" && <p id="comment" style={{textAlign: (educationStyles.center) ? "center" : "justify", marginBottom: '2rem', fontStyle:'normal'}} className="description" dangerouslySetInnerHTML={{__html: formatText(educationHeader.educationComment)}}/>}
       </section>

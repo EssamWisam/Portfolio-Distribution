@@ -1,3 +1,5 @@
+import { rand } from "../Pages/utils";
+
 export const recommendationsHeader = {
     sectionName: "Recommendations",
     id: "Recommendations",
@@ -10,6 +12,7 @@ export const recommendationsHeader = {
 
   export const recommendationsStyles = {
     "center": false,
+    "theme": rand({"BasicRecommendation":0.5, "FancyRecommendation":0.5}),
   }
 
   export const recommendationsData = [

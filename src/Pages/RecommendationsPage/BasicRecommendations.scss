@@ -12,9 +12,11 @@
 
 .testimonial {
 	opacity: 1.0 !important;
-	background-color: lighten($background-color, 5%);
+	background-color: color-mix(in srgb, $tertiary-color 25.5%, $theme);
 	border-radius: 20px;
-	box-shadow: 0 10px 20px lighten($background-color, 5%), 0 6px 6px lighten($background-color, 0%);
+	box-shadow: 0 10px 20px 
+	color-mix(in srgb, $background-color 80.5%, $theme),
+	0 6px 6px color-mix(in srgb, $background-color 80.5%, $theme),;
 	overflow: hidden;
 	width: 300px;
 	//max-width: 100%;
@@ -28,7 +30,7 @@
 
 .testimonial:hover {
 	transition: transform 0.4s ease-in-out;
-	box-shadow: 0 4px 4px lighten($background-color, 10%), 0 5px lighten($background-color, 10%); /* Larger, more prominent shadow */
+	box-shadow: 0 4px 4px color-mix(in srgb, $background-color 80.5%, $inverse-theme), 0 5px color-mix(in srgb, $background-color 75.5%, $inverse-theme),; /* Larger, more prominent shadow */
     transform: translateY(-5px); /* Slight lift for added depth */
 }
 
@@ -71,7 +73,11 @@
   }
 
 .testimonial-footer {
-	background: linear-gradient(147deg, darken($secondary-color, 10%) 0%, darken($tertiary-color, 10%) 74%);
+	background: linear-gradient(147deg, 
+	color-mix(in srgb, $secondary-color 80.5%, $theme)
+	0%, 
+	color-mix(in srgb, $tertiary-color 80.5%, $theme)
+	74%) !important;
 	color: #fff;
 	padding: 20px;
 	@media only screen and (max-width: 600px) {

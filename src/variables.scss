@@ -1,24 +1,25 @@
-$background-color: #0f1423;
-$secondary-color: #42d3ce;
-$tertiary-color: #647eff;
-$theme: black;
-$inverse-theme: white;
-$secondary-color-affected: color-mix(in srgb, $secondary-color 65.5%, $theme);
-$tertiary-color-affected: color-mix(in srgb, $tertiary-color 65.5%, $theme); 
-$border-color: color-mix(in srgb, $background-color 85.5%, $inverse-theme);
-$text-color:  color-mix(in srgb, $background-color 25.5%, $inverse-theme);
-$hover-background-color: color-mix(in srgb, $background-color 84.5%, $inverse-theme);
+:root {
+  --background-color: #0f1423;
+  --secondary-color: #42d3ce;
+  --tertiary-color: #647eff;
+  --theme: black;
+  --inverse-theme: white;
+  --secondary-color-affected: color-mix(in srgb, var(--secondary-color) 65.5%, var(--theme));
+  --tertiary-color-affected: color-mix(in srgb, var(--tertiary-color) 65.5%, var(--theme)); 
+  --border-color: color-mix(in srgb, var(--background-color) 85.5%, var(--inverse-theme));
+  --text-color: color-mix(in srgb, var(--background-color) 25.5%, var(--inverse-theme));
+  --hover-background-color: color-mix(in srgb, var(--background-color) 84.5%, var(--inverse-theme));
+}
+
+$background-color: var(--background-color);
+$secondary-color: var(--secondary-color);
+$tertiary-color: var(--tertiary-color);
+$theme: var(--theme);
+$inverse-theme: var(--inverse-theme);
+$secondary-color-affected: var(--secondary-color-affected);
+$tertiary-color-affected: var(--tertiary-color-affected);
+$border-color: var(--border-color);
+$text-color:  var(--text-color);
+$hover-background-color: var(--hover-background-color);
 
 
- :root {
-   --background-color: #{$background-color};
-   --secondary-color: #{$secondary-color};
-   --tertiary-color: #{$tertiary-color};
-   --secondary-color-affected: #{$secondary-color-affected};
-   --tertiary-color-affected: #{$tertiary-color-affected};
-   --border-color: #{$border-color};
-   --text-color: #{$text-color};
-   --hover-background-color: #{$hover-background-color};
-   --theme: #{$theme};
-   --inverse-theme: #{$inverse-theme};
- }

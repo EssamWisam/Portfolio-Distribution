@@ -1,6 +1,6 @@
 //@ts-nocheck
 import React, { useEffect } from "react";
-import 'LinearSkills.scss';
+import './LinearSkills.scss';
 
 interface ProgressBarProps {
   value: number;
@@ -33,7 +33,7 @@ interface Skill {
 }
 
 interface LinearSkillsProps {
-  skillsData: Skill[];
+  skillData: Skill[];
   color?: string;
 }
 

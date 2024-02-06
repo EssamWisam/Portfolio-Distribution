@@ -17,8 +17,8 @@ const RecommendationsPage:  React.FC<RecommendationsPageProps> = ({recommendatio
       <section className="skills" id={recommendationsHeader.id}>
         <SectionHeader sectionName={recommendationsHeader.sectionName}  description={recommendationsHeader.description} isCentered={recommendationsStyles.center}/>
         <div >
-          <BasicRecommendations recommendationsData={recommendationsData} />
-          {/* <FancyRecommendations  recommendationsData={recommendationsData} /> */}
+          {recommendationsStyles.theme === "BasicRecommendation" && <BasicRecommendations recommendationsData={recommendationsData} />}
+          {recommendationsStyles.theme === "FancyRecommendation" && <FancyRecommendations  recommendationsData={recommendationsData} />}
         </div>
         {recommendationsHeader.recommendationsComment !=="" && <p id="comment" style={{textAlign: (recommendationsStyles.center) ? "center" : "justify", marginBottom: '2rem', fontStyle:'normal'}} className="description" dangerouslySetInnerHTML={{__html: formatText(recommendationsHeader.recommendationsComment)}}/>}
       </section>

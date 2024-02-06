@@ -44,10 +44,7 @@
       width: 100%;
       //background-color: rgba(0, 0, 0, 0.9);
       //background: -webkit-linear-gradient(0deg, color-mix(in srgb, $background-color 20.5%, $secondary-color-affected) , $tertiary-color-affected);
-      background: lighten($background-color, 10%);
-      @if $theme == white {
-        background: darken($background-color, 10%) !important;
-      }
+      background: color-mix(in srgb, $tertiary-color 25.5%, $theme);
       color: #fff;
       padding: 8px 15px;
       font-size: 16px;
