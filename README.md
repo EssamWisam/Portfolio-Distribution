@@ -23,7 +23,7 @@ The steps to make your own portfolio with this are easy. No web development expe
 - Clone the project (or fork it if you are willing to help expand the distribution!)
 - npm install
 
-You will be only interested in modifying the `PagesData` folder and `App.ts`. The former has the data in each page (section) of the portfolio and the latter only in 
+You will be only interested in modifying the `PagesData` folder and `App.tsx`. The former has the data in each page (section) of the portfolio and the latter only in 
 case you want to reorder the pages or add a new page. This is how `PagesData` folder looks:
 ```javascript
 .
@@ -49,9 +49,9 @@ This means that with probability 50% it will render a horizontal timeline and wi
 for other sections as well. You are free to set all these probabilities and even enforce new variables to follow random behaviour (e.g., center above).
 
 You can also use an existing section for any purpose. For instance, the `TaskPage.ts` in the current template uses a project section for a different purpose. 
-In other words, in `App.ts` both `TaskPageData.ts` and `ProjectPageData.ts` use the same designed section `ProjectPages.tsx`.
+In other words, in `App.tsx` both `TaskPageData.ts` and `ProjectPageData.ts` use the same designed section `ProjectPages.tsx`.
 
-It should be obvious how to reorder and remove sections once you check `App.ts`.
+It should be obvious how to reorder and remove sections once you check `App.tsx`.
 
 ## ✨ Next Steps
 
