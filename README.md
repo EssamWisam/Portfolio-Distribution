@@ -1,7 +1,7 @@
 # 🔮 Portfolio Distribution
 As it crossed my mind that it would be more professional to have a personal portfolio website, 
 I paused to consider if I could design it in a manner so others that don't have the time, patience or interest to work on a portfolio but would like to have one can use it as well. 
-After all, the odds are usually low that a hiring manager views two applications from two related people in a close to consecutive fashion and even if not they should not care.
+After all, the odds are usually low that a hiring person views two applications from two related people in a close to consecutive fashion and even if not they should not care.
 
 <img width="1258" alt="image" src="https://github.com/EssamWisam/Portfolio-Distribution/assets/49572294/8aa8b4a4-d3da-4623-b35e-eb40f2cc02e5">
 
@@ -13,7 +13,7 @@ $$
 \int_{-\infty}^{+\infty} P(x)  dx = 1
 $$
 
-Absolutely kidding xD. But I didn't try violating that to be honest.
+Absolutely kidding xD. Try visiting https://portfolio-distribution.pages.dev to see some random samples!
 
 ## 🚀 Quick Start
 
