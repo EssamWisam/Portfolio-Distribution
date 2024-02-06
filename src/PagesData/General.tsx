@@ -1,16 +1,16 @@
 import { rand } from "../Pages/utils";
 
 export const generalSetup = {
-    title: rand({"Essam W.":0.5, "Essam Wisam":0.5}),
+    title: rand({"Jerry C.":0.5, "Jerry Cruncher":0.5}),
 
-    favicon: rand({"https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Light_Blue_Circle.svg/768px-Light_Blue_Circle.svg.png":0.5,
-                   "https://miro.medium.com/v2/resize:fit:2400/1*zyXFeBBQsmpIaX7VJ6g7JA.png": 0.5}),
+    favicon: rand({"https://cdn-icons-png.flaticon.com/512/1086/1086101.png":0.5,
+                   "https://www.freepnglogos.com/uploads/j-letter-png/letter-j-alphabet-letters-blue-letter-icon-10.png": 0.5}),
 
-    backgroundColor: "#001423",
+    backgroundColor: "#1B2430",
 
-    secondaryColor: "#42f3ce",
+    secondaryColor: "#2F80ED",
 
-    tertiaryColor: "#647eff",
+    tertiaryColor: "#56CCF2",
 
     theme: "#000",
 

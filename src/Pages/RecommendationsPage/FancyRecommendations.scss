@@ -14,12 +14,12 @@
 	align-items: center;
 	justify-content: center;
 	position: relative;
-	min-height: 350px;
+	min-height: 450px;
 	perspective: 1000px;
 	overflow: hidden;
 }
 .testimonials .item {
-	width: 450px;
+	width: 430px;
 	padding: 3rem;
 	border-radius: 5px;
 	background:  linear-gradient(147deg, $secondary-color-affected 20%, $tertiary-color-affected 84%);
@@ -33,11 +33,11 @@
 	cursor: pointer;
 }
 .testimonials .item img {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	object-fit: cover;
 	border-radius: 50%;
-	border: 13px solid #3B344D;
+	border: 2px solid #e9e9e9;
 }
 .testimonials .item p {
 	color: color-mix(in srgb, $text-color 15.5%, $inverse-theme);

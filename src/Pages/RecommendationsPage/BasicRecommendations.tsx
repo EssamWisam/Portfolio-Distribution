@@ -26,7 +26,7 @@ const BasicCard: React.FC<IntentCardProps> = ({ quote, name, role, date, link, i
               <div className="main-footer-wrapper">
                 {img !== "" && (
                   <img
-                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    src={img}
                     alt="user"
                   />
                 )}

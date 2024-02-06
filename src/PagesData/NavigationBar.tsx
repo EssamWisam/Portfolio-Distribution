@@ -1,16 +1,16 @@
 import { rand } from "../Pages/utils";
 
 export const navbarData = {
-  logo: "ESSAM WISAM",
+  logo: "Jerry Cruncher",
   
   pages: [
     "Home",
-    "Roles",
+    "Career",
     "Skills",
     "Projects",
     "Education",
-    "Blogs",
-    "YouTube",
+    "Tasks",
+    "Featured",
     "Recommendations",
   ],
 

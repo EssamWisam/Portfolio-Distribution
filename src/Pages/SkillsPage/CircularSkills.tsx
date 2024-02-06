@@ -36,15 +36,18 @@ const CircularSkills: React.FC<SkillComponentProps> = ({
               ).getPropertyValue(`--${color}-color-affected`)}
               size={110}
             />
+            <div style={{maxWidth: '110px'}}>
             <h4
               style={{
-                maxWidth: "100px",
                 textAlign: "center",
                 fontSize: "0.8rem",
+                whiteSpace: "pre-wrap",
+                overflowWrap: "break-word",
               }}
             >
               {skill.name}
             </h4>
+            </div>
           </div>
         ))}
       </div>

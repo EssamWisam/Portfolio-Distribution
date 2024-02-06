@@ -4,34 +4,34 @@ export const skillsHeader = {
   sectionName: "Skills & Technologies",
   id: "Skills",
   description:
-    "As a computer engineer, I have acquired a [diverse set of skills] that allow me to [excel in various roles and projects]. These include:",
+    "As a procrastination engineer, I have acquired a [diverse set of balls] that allow me to [excel in juggling]. The balls are skills including:",
   skillsComment:
-    "For a more [comprehensive or specific] list check the resume or <a href='https://www.linkedin.com/in/essamwisam/'>[Linkedin]</a>.",
+    "For a more [comprehensive or specific] list check the resume or <a href='https://www.linkedin.com/in/jerrycruncher/'>[Linkedin]</a>.",
 };
 
 export const skillsStyles = {
   "center": false,
-  "theme": rand({"LinearSkills":0.4, "CircularSkills":0.45, "BubbleSkills":0.15}),
+  "theme": rand({"LinearSkills":0.35, "CircularSkills":0.35, "BubbleSkills":0.3}),
 }
 
 export const techSkillsData = [
-  { name: "Python", value: 95 },
-  { name: "Pytorch", value: 90 },
-  { name: "Sci-kit Learn", value: 92 },
-  { name: "Flask", value: 93 },
-  { name: "Julia", value: 94 },
-  { name: "R", value: 87 },
-  { name: "React", value: 95 },
-  { name: "React Native", value: 93 },
+  { name: "Rubber Duck Debugging", value: 95 },
+  { name: "Magic Wand Programming", value: 90 },
+  { name: "Fluent in Gibberish", value: 92 },
+  { name: "Telepathic Coding", value: 93 },
+  { name: "Infinite Loop Expert", value: 94 },
+  { name: "Spoon Bending Scripting", value: 87 },
+  { name: "React to Dad Jokes", value: 95 },
+  { name: "React Native (Not-So-Native)", value: 93 },
 ];
 
 export const softSkillsData = [
-  { name: "Communication", value: 95 },
-  { name: "Collaboration", value: 94 },
-  { name: "Positivity", value: 96 },
-  { name: "Leadership", value: 95 },
-  { name: "Creativity", value: 96 },
-  { name: "Organization", value: 95 },
-  { name: "Writing", value: 95 },
-  { name: "Presentation", value: 96 },
+  { name: "Telepathic Communication", value: 95 },
+  { name: "Invisible Collaboration", value: 94 },
+  { name: "Positivity Overload", value: 96 },
+  { name: "Leadership in Daydreams", value: 95 },
+  { name: "Creativity in Procrastination", value: 96 },
+  { name: "Organization", value: 55 },
+  { name: "Writing in Hieroglyphics", value: 95 },
+  { name: "Presentation (Pretending to Know)", value: 96 },
 ];

@@ -87,7 +87,7 @@ interface Node {
     .attr('cy', (d:any) => d.y)
     .attr('r', (d:any, i:any) => (circleWidth + d.value))
     .attr('fill', (d:any, i:any) => (`url(#${getGradientId(i)})`))
-  
+
 
     // Update node positions on tick
     force.on('tick', (e:any) => {
@@ -97,13 +97,14 @@ interface Node {
     // Add text labels for each node
     node
     .append('text')
-    .text((d: { name: string; value: number }, i: number) => d.name)
+    .text((d: { name: string; value: number }, i: number) => d.name.length > 17 ? d.name.substring(0, 14) + "..." : d.name)
     .attr('font-family', 'Poppins')
     .attr('fill', (d: { value: number }, i: number) => palette.gray
     )
     .attr('text-anchor', 'middle')
     .attr('font-size', (d: { value: number }, i: number) => ( '.8em'))
-    .attr('font-weight', (d: { value: number }, i: number) => ( '500'));
+    .attr('font-weight', (d: { value: number }, i: number) => ( '500'))
+    .attr('white-space', (d: { value: number }, i: number) => ( 'pre-wrap'))
 
 
     // Start the force layout simulation
