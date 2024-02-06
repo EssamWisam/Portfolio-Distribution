@@ -11,16 +11,16 @@ import EducationPage from './Pages/EducationPage/EducationPage';
 import RecommendationsPage from './Pages/RecommendationsPage/RecommendationsPage';
 import Footer from './Common/Footer/Footer';
 //import data
-import { generalSetup } from './PagesData/General';
-import { navbarData, navbarStyles } from './PagesData/NavigationBar';
-import { heroData, heroStyles } from './PagesData/HeroPage';
-import { timelineHeader, timelineStyles, timelineData } from './PagesData/TimelinePage';
-import { softSkillsData, techSkillsData, skillsHeader, skillsStyles } from './PagesData/SkillsPage';
-import { projectData, projectHeader, projectStyles } from './PagesData/ProjectsPage';
-import { taskData, taskHeader, taskStyles } from './PagesData/TasksPage';
-import { featuredData, featuredHeader, featuredStyles } from './PagesData/FeaturedPage';
-import { educationData, educationHeader, educationStyles } from './PagesData/EducationPage';
-import { recommendationsData, recommendationsHeader, recommendationsStyles } from './PagesData/RecommendationsPage';
+import { generalSetup } from './PagesData/GeneralData';
+import { navbarData, navbarStyles } from './PagesData/NavigationBarData';
+import { heroData, heroStyles } from './PagesData/HeroPageData';
+import { timelineHeader, timelineStyles, timelineData } from './PagesData/TimelinePageData';
+import { softSkillsData, techSkillsData, skillsHeader, skillsStyles } from './PagesData/SkillsPageData';
+import { projectData, projectHeader, projectStyles } from './PagesData/ProjectsPageData';
+import { taskData, taskHeader, taskStyles } from './PagesData/TasksPageData';
+import { featuredData, featuredHeader, featuredStyles } from './PagesData/FeaturedPageData';
+import { educationData, educationHeader, educationStyles } from './PagesData/EducationPageData';
+import { recommendationsData, recommendationsHeader, recommendationsStyles } from './PagesData/RecommendationsPageData';
 
 const App: React.FC = () => {
   // set theme
