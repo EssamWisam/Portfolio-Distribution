@@ -1,75 +1,75 @@
 import { rand } from "../Pages/utils";
 
 export const timelineHeader = {
-  sectionName: "Career",
-  id: "Career",
-  description: "It's not that I have [many careers], it's that all the careers [I have were real jobs]."
+  sectionName: "Roles",
+  id: "Roles",
+  description: "Throughout my career, I've immersed myself in [diverse roles] that have shaped my [professional journey]."
 }
 
 export const timelineStyles = {
   "center": false,
-  "theme": rand({"HorizontalTimeline":0.5, "LongtidunalTimeline":0.5}),
+  "theme": rand({"HorizontalTimeline":0.65, "LongtidunalTimeline":0.35}),
 }
 
 export const timelineData = [
   {
     id: 0,
-    role: "Professional Nap Taker",
-    company: "Dreamland Inc.",
-    date: "Jan 2020-Dec 2023",
+    role: "Cross-platform Developer",
+    company: "Freelance",
+    date: "Jul-Sep 2022",
     description: [
-      "Achieved expert level in the art of napping.",
-      "Participated in numerous nap-related research studies.",
+      'Built and deployed a quiz mobile app and corresponding website "KeyTeachingKnowledge" for graduate students learning to teach English in Morocco.',
+      'Built and deployed a mobile app for daily logging with statistics, Eisenhower matrix task tracking and methodic note-taking "Daily Chronicle".',
     ],
-    buttonText: "View Nap Achievements ▶",
-    buttonLink: "https://example.com/naps",
+    buttonText: "See Example ▶",
+    buttonLink: "https://github.com/EssamWisam/Daily-Chronicle-ReactNative",
   },
   {
     id: 1,
-    role: "Chief Emoji Consultant",
-    company: "Emoji Enterprises",
-    date: "Mar 2021-Feb 2024",
+    role: "Technical Writer",
+    company: "Towards Data Science",
+    date: "Jul 2021-Now",
     description: [
-      "Provided expert advice on appropriate emoji usage in various contexts.",
-      "Conducted extensive research on the evolution of emojis.",
+      "Writing articles featuring natural language processing, deep learning, machine learning, mathematics and programming.",
     ],
-    buttonText: "Explore Emoji Universe ▶",
-    buttonLink: "https://example.com/emojis",
+    buttonText: "See Articles ▶",
+    buttonLink: "https://medium.com/@essamwissam",
   },
   {
     id: 2,
-    role: "Master of Procrastination",
-    company: "Delay Dynamics",
-    date: "Jan 2019-Present",
+    role: "Deep Learning Engineer",
+    company: "Dstny Engage",
+    date: "Aug-Sep 2023",
     description: [
-      "Specialized in delaying tasks until the last possible moment.",
-      "Developed innovative procrastination techniques.",
+      "Fine-tuned several LMs to mask sensitive information in user messages sent to chatbots in English, Dutch, Standard and Cairene Arabic. This includes over 27 entities as defined by the GDPR. Our best model had an F1 of 92.5%.",
+      "Fine-tuned LMs for extractive QA in English, Dutch and Arabic. Ported 7B and 13B Llama 2 models to run in-house with GPTQ optimization for efficiency and prompt-engineered it for abstractive QA and validated both using Squadv1 dataset.",
     ],
-    buttonText: "Learn Procrastination Secrets ▶",
-    buttonLink: "https://example.com/procrastination",
+    buttonText: "See Demo ▶",
+    buttonLink: "https://github.com/tactful-ai/Dstny-LLM",
   },
   {
     id: 3,
-    role: "Director of Coffee Consumption",
-    company: "Java Junction",
-    date: "Jun 2022-May 2025",
+    role: "Machine Learning Engineer",
+    company: "The Julia Language",
+    date: "Jun-Oct 2023",
     description: [
-      "Led strategic initiatives to maximize coffee intake efficiency.",
-      "Organized company-wide coffee tasting events.",
+      "Created the Imbalance.jl and MLJBalancing.jl packages for JuliaAI and implemented over 11 oversampling and undersampling algorithms from the literature to address class imbalance.",
+      "Wrote unit and end-to-end tests, extensive documentation, illustrative and practical guides, explanatory articles for the implemented techniques.",
+      "Implemented MLJ.jl and TableTransforms.jl interfaces for each of the techniques, aside from the default pure functional interface",
+      "Implemented wrappers that facilitate sequential and parallel combination of resamplers with MLJ classification models.",
     ],
-    buttonText: "Join Coffee Club ▶",
-    buttonLink: "https://example.com/coffee",
+    buttonText: "See Code and Docs ▶",
+    buttonLink: "https://github.com/JuliaAI/Imbalance.jl",
   },
   {
     id: 4,
-    role: "Senior Cat Video Analyst",
-    company: "Purrfect Media",
-    date: "Apr 2023-Present",
+    role: "Research Assistant",
+    company: "German Research Center of AI",
+    date: "Nov 2023-Now",
     description: [
-      "Analyzed thousands of cat videos for entertainment value.",
-      "Published groundbreaking research on the correlation between cat video length and viewer engagement.",
+      "Assisting in research tasks related to large language models and natural language processing as well as teaching tasks related to large language models (creating slides and exercises).",
     ],
-    buttonText: "Watch Cat Videos ▶",
-    buttonLink: "https://example.com/cats",
+    buttonText: "",
+    buttonLink: "",
   },
-]
+];

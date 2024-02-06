@@ -3,29 +3,23 @@ import { rand } from "../Pages/utils";
 export const heroData = {
     id: "Home",
 
-    images: ["https://static.vecteezy.com/system/resources/previews/026/480/450/original/cute-halloween-ghost-png.png", "https://files.cults3d.com/uploaders/19196355/illustration-file/d521cca9-e7f8-42e2-aa91-e63cc2c350bf/16zzgq.jpg", "https://pbs.twimg.com/profile_images/941030389266579458/DUihl_ix_400x400.jpg"],
+    images: ["https://i.imgur.com/QNxLMh4.jpg", "https://i.imgur.com/epiM9fg.png", "https://i.imgur.com/i0pyqxR.jpeg"],
 
-    title: rand({"Hey, I am Jerry Cruncher":0.5, "Welcome to Jerry's Profile":0.3, "Hello! Cruncher is Here": 0.2}),
+    title: rand({"Hey, I am Essam Wisam":0.5, "Hello! I am Essam Wisam":0.5}),
 
-    roles: [
-      "Chief Procrastination Officer",
-      "Senior Coffee Drinker",
-      "Director of Emoji Usage",
-      "Master of Debugging",
-      "Code Ninja Warrior"
-    ],
+    roles: ["Machine Learning Engineer", "Machine Learning Researcher", "Front-end Developer", "Cross-platform Developer", "Teaching Assistant"],
 
     roleDuration: 1600,
 
-    about: "Meet Jerry, the [epitome of inefficiency] and yet somehow the [unsung hero of mediocrity]. Born with a natural talent for [finding the path of least resistance], Jerry has mastered the art of [doing everything and nothing] at the same time. You must hire Jerry immediately or miss out losing nothing and your business.",
+    about: "I'm a [computer engineer graduate from Cairo University] with a strong academic background and hands-on experience in machine learning, deep learning and data science. I have a deep aspiration to make things as flawless, useful and beautiful as possible and I greatly value [spreading knowledge, collaborating and communicating with others].",
 
-    reachOutBText: rand({"Email Me":0.6, "Reach Me":0.4}),
+    reachOutBText: rand({"Reach Out":0.6, "Connect":0.4}),
 
-    email: "jerryCruncher@outlook.com",
+    email: "essamwisam@outlook.com",
 
     downloadBText: "Download CV",
 
-    CV: "https://cdnuploads.aa.com.tr/uploads/Contents/2023/12/11/thumbs_b_c_20ad63bd572bed32477e1c2067fa72e5.jpg?v=085328",
+    CV: "https://drive.google.com/uc?export=download&id=1BQCs3wp6zQo_oE6Af1dBbUTpiPgiwsCa",
 
     extraBText: "",
 
@@ -35,29 +29,28 @@ export const heroData = {
 
     social : ["FaGithub", "FaLinkedin", "FaTwitter", "FaDiscord",],
 
-    socialLinks: ["https://github.com/jerrycruncher", "https://www.linkedin.com/in/jerrycruncher/", "https://twitter.com/jerry",  "https://discordapp.com/users/cruncher"],
+    socialLinks: ["https://github.com/EssamWisam", "https://www.linkedin.com/in/essamwisam/", "https://twitter.com/essam_wisam",  "https://discordapp.com/users/831916875453300847"],
 
     socialText: "Connect with me ",
 
-    quotes: [
-      "I'm not lazy, I'm on energy-saving mode.",
-      "I would lose weight, but I hate losing.",
-      "I put the 'pro' in procrastination.",
-      "I'm not shy, I'm just holding back my awesomeness so I don't intimidate you.",
-    ]
+    quotes: ["\"We have some catching up to do in the area of machine learning and artificial intelligence.\" -Klaus Froehlich",
+               "\"A ship in harbor is safe, but that is not what ships are built for.\" - John A. Shedd",
+               "\"Good things take time\" — John Wooden"
+
+  ],
 
   }
 
   export const heroStyles = {
     fontSizes: ["2.9rem", "2.0rem", "1.0rem"],
     
-    imageOnLeft: rand({"true":0.5, "false":0.5} ),
+    imageOnLeft: rand({"true":0.4, "false":0.6} ),
     
     imgDim: '400px',
     
     roundness: "50%",
     
-    hideImage: rand({"false":0.8, "true":0.2}),
+    hideImage: false,
     
     center: rand({"false":0.7, "true":0.3} ),
     

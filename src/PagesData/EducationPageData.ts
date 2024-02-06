@@ -3,7 +3,7 @@ import { rand } from "../Pages/utils";
 export const educationHeader = {
     sectionName: "Education",
     id: "Education",
-    description: "I studied procrastination for [20 years of doing nothing]:",
+    description: "Besides this work is [great deal] of [education and autodidactisim]:",
     educationComment: "",
     sliderTitle: "Certificates",
   }
@@ -16,59 +16,59 @@ export const educationHeader = {
   export const educationData = {
     journey: [
         {
-            degree: "Bacherlors of Sleep Engineering",
-            img: "https://images.globalhighlights.com/allpicture/2021/06/bdd9119e11ef437389da5b13_cut_600x800_56.jpg",
-            university: "Pyramids of Gaza",
-            universityLink: "https://pyramid.giza/Home",
+            degree: "Bacherlors of Computer Engineering",
+            img: "https://i.imgur.com/utt3SE5.jpeg",
+            university: "Cairo University",
+            universityLink: "https://cu.edu.eg/Home",
             year: "2018 - 2023",
-            gpa: "9.0",
-            bonus: ["Top of the Class", "Perfectly Slept in All Courses"]
+            gpa: "4.0",
+            bonus: ["Valedictorian of the Class", "Granted A in just about all courses covered"]
         },
     ],
-    certificates:  [
+    certificates: [
         {
-          img: "https://i0.wp.com/www.excelsupersite.com/wp-content/uploads/2017/02/AwardCertificates_1.png?fit=1002%2C752&ssl=1",
-          link: "https://www.linkedin.com/in/jerrycruncher/details/certifications/",
-          name: "Certified Nap Specialist",
-          provider: "The Dreamland Institute",
-          date: "Jan. 2024"
+            img: "https://i.imgur.com/XdzDTHq.png",
+            link: "https://www.linkedin.com/in/essamwisam/details/certifications/",
+            name:"Generative AI with LLMs",
+            provider:"AWS & Deep Learning AI",
+            date: "Jan. 2024"
         },
         {
-          img: "https://i.pinimg.com/originals/fc/55/19/fc551974435939a0dfea6b17090c8016.png",
-          link: "https://www.linkedin.com/in/jerrycruncher/details/certifications/",
-          name: "Certified Coffee Addict",
-          provider: "Caffeine Connoisseurs Association",
-          date: "Sep. 2022"
+            img: "https://i.imgur.com/3F4fIlO.png",
+            link: "https://www.linkedin.com/in/essamwisam/details/certifications/",
+            name:"Introduction to Machine Learning in Production",
+            provider:"Deep Learning AI",
+            date: "Sep. 2022"
         },
         {
-          img: "https://i0.wp.com/www.excelsupersite.com/wp-content/uploads/2017/02/AwardCertificates_1.png?fit=1002%2C752&ssl=1",
-          link: "https://www.linkedin.com/in/jerrycruncher/details/certifications/",
-          name: "Master of Staring at Walls",
-          provider: "Institute of Contemplative Sciences",
-          date: "Sep. 2022"
+            img: "https://i.imgur.com/LClrXEe.png",
+            link: "https://www.linkedin.com/in/essamwisam/details/certifications/",
+            name:"Recommenders & RL",
+            provider:"Deep Learning AI",
+            date: "Sep. 2022"
         },
         {
-          img: "https://i.pinimg.com/originals/fc/55/19/fc551974435939a0dfea6b17090c8016.png",
-          link: "https://www.linkedin.com/in/jerrycruncher/details/certifications/",
-          name: "Certified Procrastinator",
-          provider: "Procrastination Academy",
-          date: "Sep. 2022"
+            img: "https://i.imgur.com/6dlIxUI.png",
+            link: "https://www.linkedin.com/in/essamwisam/details/certifications/",
+            name:"Writing in the Sciences",
+            provider:"Deep Learning AI",
+            date: "Sep. 2022"
         },
         {
-          img: "https://live.staticflickr.com/2113/1952121129_5f952e74a4_z.jpg",
-          link: "https://www.linkedin.com/in/jerrycruncher/details/certifications/",
-          name: "Certified Daydreamer",
-          provider: "Fantasy Realms University",
-          date: "Aug. 2022"
+            img: "https://i.imgur.com/tzPIQRE.png",
+            link: "https://www.linkedin.com/in/essamwisam/details/certifications/",
+            name:"Deep Learning Specialization",
+            provider:"Deep Learning AI",
+            date: "Aug. 2022"
         },
         {
-          img: "https://i0.wp.com/www.excelsupersite.com/wp-content/uploads/2017/02/AwardCertificates_1.png?fit=1002%2C752&ssl=1",
-          link: "https://www.linkedin.com/in/jerrycruncher/details/certifications/",
-          name: "Certified Professional Pillow Fluffer",
-          provider: "Pillow Puffing Institute",
-          date: "2020"
-        }
-      ]
+            img: "https://i.imgur.com/rg3mXHS.png",
+            link: "https://www.linkedin.com/in/essamwisam/details/certifications/",
+            name:"Differential Equations for Engineers",
+            provider:"Hong Kong University of Science and Technology",
+            date: "2020"
+        },
+    ]
       
 }
     
