@@ -10,6 +10,7 @@
 	margin: 6rem auto;
 	@media only screen and (max-width: 767px) {
 		width: 80%;
+		margin-top: 1rem !important;
 	}
 	
 	&:before {
@@ -120,7 +121,8 @@
 	margin-top: 11rem;
 	margin-left: 3rem;
 	@media only screen and (max-width: 767px) {
-		margin-left: 0.8rem;
+		padding-left: 2rem;
+		margin-left: 0rem ;
 	}
 	width: 90%;
 	li {
