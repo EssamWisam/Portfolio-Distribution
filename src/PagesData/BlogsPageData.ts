@@ -131,7 +131,6 @@ export const blogData = [
       link: "https://github.com/TheBotiverse/Botiverse",
       github_link: "https://github.com/TheBotiverse/Botiverse",
       categories: ["NLP"],
-      special: "Open Source"
     },
     {
       title: "Easily Understand LSTMs & GRUs",
@@ -188,7 +187,6 @@ export const blogData = [
       link: "https://juliaai.github.io/Imbalance.jl/dev/",
       github_link: "https://github.com/JuliaAI/Imbalance.jl",
       categories: ["Machine Learning Mathematics"],
-      special: "Open Source"
     },
     {
       title: "Deriving a Solution for Least Absolute Deviations",
@@ -197,7 +195,6 @@ export const blogData = [
       link: "https://github.com/EssamWisam/MLPath",
       github_link: "https://github.com/EssamWisam/MLPath",
       categories: ["Machine Learning Mathematics"],
-      special: "Open Source"
     },
     {
       title: "Why is Least Squares So Special?",
