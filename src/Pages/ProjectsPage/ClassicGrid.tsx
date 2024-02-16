@@ -18,7 +18,7 @@ interface DataItem {
   interface Props {
     data: DataItem[];
     category: string;
-    icon: string;
+    icon?: string;
     buttonText?: string;
   }
   
