@@ -10,7 +10,8 @@
   color: $text-color;
 
   @media screen and (max-width: 900px) {
-    padding: 1rem;
+    padding: 1.0rem;
+      justify-content: center;
 }
 
 }
