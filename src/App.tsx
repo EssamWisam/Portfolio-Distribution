@@ -18,7 +18,7 @@ import { heroData, heroStyles } from './PagesData/HeroPageData';
 import { timelineHeader, timelineStyles, timelineData } from './PagesData/TimelinePageData';
 import { softSkillsData, techSkillsData, skillsHeader, skillsStyles } from './PagesData/SkillsPageData';
 import { projectData, projectHeader, projectStyles } from './PagesData/ProjectsPageData';
-import { taskData, taskHeader, taskStyles } from './PagesData/TasksPageData';
+import { blogData, blogHeader, blogStyles } from './PagesData/BlogsPageData';
 import { featuredData, featuredHeader, featuredStyles } from './PagesData/FeaturedPageData';
 import { educationData, educationHeader, educationStyles } from './PagesData/EducationPageData';
 import { recommendationsData, recommendationsHeader, recommendationsStyles } from './PagesData/RecommendationsPageData';
@@ -51,7 +51,7 @@ const App: React.FC = () => {
       <Fade><SkillsPage skillsStyles={skillsStyles} skillsHeader={skillsHeader} softSkillsData={softSkillsData} techSkillsData={techSkillsData}/></Fade>
       <Fade><ProjectsPage projectHeader={projectHeader} projectStyles={projectStyles} projectData={projectData}  /></Fade>
       <Fade><EducationPage educationData={educationData} educationHeader={educationHeader} educationStyles={educationStyles} /></Fade>
-      <Fade><ProjectsPage projectHeader={taskHeader} projectStyles={taskStyles} projectData={taskData}  /></Fade>
+      <Fade><ProjectsPage projectHeader={blogHeader} projectStyles={blogStyles} projectData={blogData}  /></Fade>
       <Fade><FeaturedPage featuredData={featuredData} featuredHeader={featuredHeader} featuredStyles={featuredStyles} /></Fade>
       <Fade><RecommendationsPage recommendationsData={recommendationsData} recommendationsHeader={recommendationsHeader} recommendationsStyles={recommendationsStyles} /></Fade>
       <Footer heroData={heroData}/>
