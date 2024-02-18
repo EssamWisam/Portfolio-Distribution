@@ -1,7 +1,7 @@
 # 🔮 Portfolio Distribution
 As it crossed my mind that it would be more professional to have a personal portfolio website, 
 I paused to consider if I could design it in a manner so others that don't have the time, patience or interest to work on a portfolio but would like to have one can use it as well. 
-After all, the odds are usually low that a hiring manager views two applications from two related people in a close to consecutive fashion and even if not they should not care.
+After all, the odds are usually low that a hiring person views two applications from two related people in a close to consecutive fashion and even if not they should not care.
 
 <img width="1258" alt="image" src="https://github.com/EssamWisam/Portfolio-Distribution/assets/49572294/8aa8b4a4-d3da-4623-b35e-eb40f2cc02e5">
 
@@ -13,7 +13,7 @@ $$
 \int_{-\infty}^{+\infty} P(x)  dx = 1
 $$
 
-Absolutely kidding xD. But I didn't try violating that to be honest.
+Absolutely kidding xD. Try visiting https://portfolio-distribution.pages.dev to see some random samples!
 
 ## 🚀 Quick Start
 
@@ -23,7 +23,7 @@ The steps to make your own portfolio with this are easy. No web development expe
 - Clone the project (or fork it if you are willing to help expand the distribution!)
 - npm install
 
-You will be only interested in modifying the `PagesData` folder and `App.ts`. The former has the data in each page (section) of the portfolio and the latter only in 
+You will be only interested in modifying the `PagesData` folder and `App.tsx`. The former has the data in each page (section) of the portfolio and the latter only in 
 case you want to reorder the pages or add a new page. This is how `PagesData` folder looks:
 ```javascript
 .
@@ -49,14 +49,15 @@ This means that with probability 50% it will render a horizontal timeline and wi
 for other sections as well. You are free to set all these probabilities and even enforce new variables to follow random behaviour (e.g., center above).
 
 You can also use an existing section for any purpose. For instance, the `TaskPage.ts` in the current template uses a project section for a different purpose. 
-In other words, in `App.ts` both `TaskPageData.ts` and `ProjectPageData.ts` use the same designed section `ProjectPages.tsx`.
+In other words, in `App.tsx` both `TaskPageData.ts` and `ProjectPageData.ts` use the same designed section `ProjectPages.tsx`.
 
-It should be obvious how to reorder and remove sections once you check `App.ts`.
+It should be obvious how to reorder and remove sections once you check `App.tsx`.
 
 ## ✨ Next Steps
 
 - This deserves much better documentation so I will likely get back to that.
 - You are more than welcome to contribute with style improvements or new components for individual sections. Hopefully, the folder structure will be welcoming for that.
+- Color generalizing is quite poor for light themes. Let's look into that later.
 - Don't hesitate to reach out in case you face any difficulties (issues are your best bet if they are general problems).
 
 Thanks you!

@@ -9,6 +9,10 @@
   flex-wrap: wrap;
   color: $text-color;
 
+  @media screen and (max-width: 900px) {
+    padding: 1.0rem;
+      justify-content: center;
+}
 
 }
 

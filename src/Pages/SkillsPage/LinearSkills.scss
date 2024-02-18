@@ -4,6 +4,9 @@
     h4 {
         color: $text-color;
     }
+    @media screen and (max-width: 900px) {
+        padding: 0.5rem 1.5rem;
+    }
 }
 
 .progress {
